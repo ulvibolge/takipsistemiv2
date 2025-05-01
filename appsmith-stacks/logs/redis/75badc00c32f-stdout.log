@@ -1,8 +1,0 @@
-1678:C 04 Apr 2025 08:42:35.965 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
-1678:C 04 Apr 2025 08:42:35.965 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1678, just started
-1678:C 04 Apr 2025 08:42:35.965 # Configuration loaded
-1678:M 04 Apr 2025 08:42:35.968 * Running mode=standalone, port=6379.
-1678:M 04 Apr 2025 08:42:35.968 # Server initialized
-1678:M 04 Apr 2025 08:42:35.968 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
-1678:M 04 Apr 2025 08:42:35.987 * DB loaded from disk: 0.018 seconds
-1678:M 04 Apr 2025 08:42:35.987 * Ready to accept connections
