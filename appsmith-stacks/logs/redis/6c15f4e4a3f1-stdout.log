@@ -1,0 +1,18 @@
+1677:C 04 Apr 2025 06:39:33.113 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1677:C 04 Apr 2025 06:39:33.113 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1677, just started
+1677:C 04 Apr 2025 06:39:33.113 # Configuration loaded
+1677:M 04 Apr 2025 06:39:33.128 * Running mode=standalone, port=6379.
+1677:M 04 Apr 2025 06:39:33.128 # Server initialized
+1677:M 04 Apr 2025 06:39:33.128 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1677:M 04 Apr 2025 06:39:33.164 * DB loaded from disk: 0.034 seconds
+1677:M 04 Apr 2025 06:39:33.164 * Ready to accept connections
+1677:M 04 Apr 2025 06:41:26.881 * 1 changes in 15 seconds. Saving...
+1677:M 04 Apr 2025 06:41:26.882 * Background saving started by pid 2218
+2218:C 04 Apr 2025 06:41:26.935 * DB saved on disk
+2218:C 04 Apr 2025 06:41:26.936 * RDB: 0 MB of memory used by copy-on-write
+1677:M 04 Apr 2025 06:41:26.983 * Background saving terminated with success
+1677:signal-handler (1743749268) Received SIGTERM scheduling shutdown...
+1677:M 04 Apr 2025 06:47:48.261 # User requested shutdown...
+1677:M 04 Apr 2025 06:47:48.261 * Saving the final RDB snapshot before exiting.
+1677:M 04 Apr 2025 06:47:48.304 * DB saved on disk
+1677:M 04 Apr 2025 06:47:48.304 # Redis is now ready to exit, bye bye...

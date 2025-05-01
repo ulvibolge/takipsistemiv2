@@ -1,0 +1,1278 @@
+READY
+RESULT 309
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:C 05 Apr 2025 06:55:42.543 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1717:C 05 Apr 2025 06:55:42.543 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1717, just started
+1717:C 05 Apr 2025 06:55:42.543 # Configuration loaded
+READY
+RESULT 110
+processname:rts groupname:rts pid:1719 channel:stdout
+2025-04-05T06:55:42.477Z Load environment configuration
+READY
+RESULT 163
+processname:backend groupname:backend pid:1720 channel:stdout
+2025-04-05T06:55:42.489Z Load environment configuration
+2025-04-05T06:55:42.529Z Running with mongo.
+READY
+RESULT 116
+processname:editor groupname:editor pid:1725 channel:stdout
+2025-04-05T06:55:42.527Z Load environment configuration
+READY
+RESULT 583
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 06:55:42.566 * Running mode=standalone, port=6379.
+1717:M 05 Apr 2025 06:55:42.566 # Server initialized
+1717:M 05 Apr 2025 06:55:42.567 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+READY
+RESULT 116
+processname:backend groupname:backend pid:1720 channel:stdout
+2025-04-05T06:55:42.588Z Waiting for RTS to start ...
+READY
+RESULT 189
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 06:55:42.602 * DB loaded from disk: 0.031 seconds
+1717:M 05 Apr 2025 06:55:42.602 * Ready to accept connections
+READY
+RESULT 246
+processname:postgres groupname:postgres pid:1733 channel:stderr
+2025-04-05 06:55:42.836 UTC [1733] LOG:  starting PostgreSQL 14.15 (Ubuntu 14.15-1.pgdg20.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0, 64-bit
+READY
+RESULT 154
+processname:postgres groupname:postgres pid:1733 channel:stderr
+2025-04-05 06:55:42.836 UTC [1733] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+READY
+RESULT 166
+processname:postgres groupname:postgres pid:1733 channel:stderr
+2025-04-05 06:55:42.912 UTC [1733] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+READY
+RESULT 162
+processname:postgres groupname:postgres pid:1733 channel:stderr
+2025-04-05 06:55:43.086 UTC [1778] LOG:  database system was shut down at 2025-04-05 06:55:40 UTC
+READY
+RESULT 92
+processname:editor groupname:editor pid:1725 channel:stdout
+/tmp/appsmith/www /opt/appsmith
+READY
+RESULT 74
+processname:editor groupname:editor pid:1725 channel:stdout
+/opt/appsmith
+READY
+RESULT 152
+processname:postgres groupname:postgres pid:1733 channel:stderr
+2025-04-05 06:55:43.183 UTC [1733] LOG:  database system is ready to accept connections
+READY
+RESULT 165
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"info","ts":1743836143.3279734,"msg":"using config from file","file":"/tmp/appsmith/Caddyfile"}
+READY
+RESULT 256
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"warn","ts":1743836143.3297434,"msg":"The nested 'metrics' option inside `servers` is deprecated and will be removed in the next major version. Use the global 'metrics' option instead."}
+READY
+RESULT 154
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"info","ts":1743836143.3333488,"msg":"adapted config to JSON","adapter":"caddyfile"}
+READY
+RESULT 165
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"info","ts":1743836143.4844096,"msg":"using config from file","file":"/tmp/appsmith/Caddyfile"}
+READY
+RESULT 256
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"warn","ts":1743836143.4860296,"msg":"The nested 'metrics' option inside `servers` is deprecated and will be removed in the next major version. Use the global 'metrics' option instead."}
+READY
+RESULT 153
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"info","ts":1743836143.521002,"msg":"adapted config to JSON","adapter":"caddyfile"}
+READY
+RESULT 520
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"info","ts":1743836143.535636,"logger":"admin","msg":"admin endpoint started","address":"0.0.0.0:2019","enforce_origin":false,"origins":["//0.0.0.0:2019"]}
+{"level":"warn","ts":1743836143.535665,"logger":"admin","msg":"admin endpoint on open interface; host checking disabled","address":"0.0.0.0:2019"}
+{"level":"info","ts":1743836143.5363805,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc0003f0f80"}
+READY
+RESULT 4049
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"warn","ts":1743836143.5595787,"logger":"http.auto_https","msg":"server is listening only on the HTTP port, so no automatic HTTPS will be applied to this server","server_name":"srv0","http_port":80}
+{"level":"debug","ts":1743836143.559647,"logger":"http.auto_https","msg":"adjusted config","tls":{"automation":{"policies":[{}]}},"http":{"servers":{"srv0":{"listen":[":80"],"routes":[{"handle":[{"handler":"vars","root":"/opt/appsmith/editor"}]},{"handle":[{"handler":"vars","log_skip":true}]},{"handle":[{"handler":"vars","log_skip":true}]},{"handle":[{"handler":"headers","response":{"set":{"X-Request-Id":["{http.request.header.X-Request-Id}"]}}}]},{"handle":[{"handler":"headers","response":{"set":{"X-Request-Id":["invalid_request_id"]}}}]},{"handle":[{"handler":"headers","response":{"set":{"Cache-Control":["public, max-age=31536000, immutable"]}}}]},{"handle":[{"handler":"headers","response":{"deferred":true,"delete":["Server"],"set":{"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["{http.request.uuid}"],"X-Content-Type-Options":["nosniff"]}}},{"handler":"request_body","max_size":150000000}]},{"handle":[{"handler":"static_response","headers":{"Location":["/supervisor/"]},"status_code":302}]},{"handle":[{"handler":"rate_limit","rate_limits":{"dynamic_zone":{"key":"{http.request.header.Forwarded}+{http.request.header.X-Forwarded-For}+{http.request.remote.host}","max_events":100,"window":1000000000}}}]},{"handle":[{"handler":"headers","request":{"set":{"X-Request-Id":["invalid_request_id"]}}}]},{"handle":[{"handler":"headers","request":{"delete":["X-Appsmith-Request-Id"]}}]},{"group":"group8","handle":[{"handler":"subroute","routes":[{"handle":[{"canonical_uris":false,"handler":"file_server","hide":["/tmp/appsmith/Caddyfile"],"precompressed":{"br":{},"gzip":{}},"precompressed_order":["br","gzip"]}]}]}]},{"group":"group8","handle":[{"handler":"subroute","routes":[{"handle":[{"handler":"error","status_code":404}]}]}]},{"group":"group8","handle":[{"handler":"subroute","routes":[{"handle":[{"handler":"vars","root":"/opt/appsmith"}]},{"group":"group3","handle":[{"handler":"rewrite","uri":"/info.json"}]},{"handle":[{"canonical_uris":false,"handler":"file_server","hide":["/tmp/appsmith/Caddyfile"],"precompressed":{"br":{},"gzip":{}},"precompressed_order":["br","gzip"]}]}]}]},{"group":"group8","handle":[{"handler":"subroute","routes":[{"handle":[{"handler":"reverse_proxy","headers":{"request":{"delete":["Forwarded"],"set":{"X-Appsmith-Request-Id":["{http.request.uuid}"]}}},"upstreams":[{"dial":"127.0.0.1:8080"}]}]}]}]},{"group":"group8","handle":[{"handler":"subroute","routes":[{"handle":[{"handler":"rewrite","strip_path_prefix":"/supervisor"}]},{"handle":[{"handler":"reverse_proxy","headers":{"request":{"delete":["Forwarded"],"set":{"X-Appsmith-Request-Id":["{http.request.uuid}"]}}},"upstreams":[{"dial":"127.0.0.1:9001"}]}]}]}]},{"group":"group8","handle":[{"handler":"subroute","routes":[{"handle":[{"handler":"reverse_proxy","headers":{"request":{"delete":["Forwarded"],"set":{"X-Appsmith-Request-Id":["{http.request.uuid}"]}}},"upstreams":[{"dial":"127.0.0.1:8091"}]}]}]}]},{"group":"group8","handle":[{"handler":"subroute","routes":[{"handle":[{"handler":"vars","root":"/tmp/appsmith/www"}]},{"handle":[{"handler":"rewrite","uri":"{http.matchers.file.relative}"}],"match":[{"file":{"try_files":["/loading.html","/index.html"]}}]},{"handle":[{"canonical_uris":false,"handler":"file_server","hide":["/tmp/appsmith/Caddyfile"],"precompressed":{"br":{},"gzip":{}},"precompressed_order":["br","gzip"]}]}]}]}],"errors":{"routes":[{"handle":[{"handler":"headers","response":{"deferred":true,"delete":["Server","Cache-Control"]}},{"body":"{http.error.status_code} {http.error.status_text}","handler":"static_response","status_code":"{http.error.status_code}"}]}]},"automatic_https":{"disable":true},"trusted_proxies":{"ranges":["0.0.0.0/0"],"source":"static"},"logs":{"default_logger_name":"log0"}}},"metrics":{}}}
+READY
+RESULT 664
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836143.5681162,"logger":"http","msg":"starting server loop","address":"[::]:80","tls":false,"http3":false}
+{"level":"warn","ts":1743836143.5682054,"logger":"http","msg":"HTTP/2 skipped because it requires TLS","network":"tcp","addr":":80"}
+{"level":"warn","ts":1743836143.568221,"logger":"http","msg":"HTTP/3 skipped because it requires TLS","network":"tcp","addr":":80"}
+{"level":"info","ts":1743836143.5682805,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+{"level":"info","ts":1743836143.5683494,"msg":"serving initial configuration"}
+READY
+RESULT 343
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"info","ts":1743836143.6271207,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/appsmith-stacks/data/caddy","instance":"8ad3c58a-9f27-4a64-950d-6f48b7035dd5","try_again":1743922543.6271174,"try_again_in":86399.9999992}
+READY
+RESULT 116
+processname:backend groupname:backend pid:1720 channel:stdout
+2025-04-05T06:55:43.638Z Waiting for RTS to start ...
+READY
+RESULT 156
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"info","ts":1743836143.6389165,"logger":"tls","msg":"finished cleaning storage units"}
+READY
+RESULT 322
+processname:mongodb groupname:mongodb pid:1718 channel:stdout
+{"t":{"$date":"2025-04-05T06:55:43.748Z"},"s":"I",  "c":"CONTROL",  "id":20697,   "ctx":"-","msg":"Renamed existing log file","attr":{"oldLogPath":"/appsmith-stacks/logs/mongodb/db.log","newLogPath":"/appsmith-stacks/logs/mongodb/db.log.2025-04-05T06-55-43"}}
+READY
+RESULT 105
+processname:rts groupname:rts pid:1719 channel:stdout
+RTS version v1.65 running at http://localhost:8091
+READY
+RESULT 78
+processname:backend groupname:backend pid:1720 channel:stdout
+{"success":true}READY
+RESULT 100
+processname:backend groupname:backend pid:1720 channel:stdout
+2025-04-05T06:55:44.690Z RTS started.
+READY
+RESULT 801
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836147.8620145,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"51484","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/loading.html","headers":{"X-Request-Id":["invalid_request_id"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"method":"GET","uri":"/loading.html"}
+{"level":"debug","ts":1743836147.8621385,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/loading.html","result":"/tmp/appsmith/www/loading.html"}
+{"level":"debug","ts":1743836147.8621914,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/loading.html"}
+READY
+RESULT 885
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836147.8954828,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"51484","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"Accept":["*/*"],"User-Agent":["curl/7.68.0"]}},"bytes_read":0,"user_id":"","duration":0.03391279,"size":2026,"status":200,"resp_headers":{"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Accept-Ranges":["bytes"],"Content-Length":["2026"],"X-Appsmith-Request-Id":["0fd2e306-d701-4739-a834-d07f7a99525c"],"Etag":["\"d8yib9kvn9m81ka\""],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Sat, 05 Apr 2025 06:55:18 GMT"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Content-Type-Options":["nosniff"]},"uuid":"0fd2e306-d701-4739-a834-d07f7a99525c"}
+READY
+RESULT 118
+processname:backend groupname:backend pid:1720 channel:stderr
+SLF4J(W): Class path contains multiple SLF4J providers.
+READY
+RESULT 312
+processname:backend groupname:backend pid:1720 channel:stderr
+SLF4J(W): Found provider [ch.qos.logback.classic.spi.LogbackServiceProvider@7085bdee]
+SLF4J(W): Found provider [org.slf4j.reload4j.Reload4jServiceProvider@1ce92674]
+SLF4J(W): See https://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+READY
+RESULT 160
+processname:backend groupname:backend pid:1720 channel:stderr
+SLF4J(I): Actual provider is of type [ch.qos.logback.classic.spi.LogbackServiceProvider@7085bdee]
+READY
+RESULT 801
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836157.7295458,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"45040","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/loading.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/loading.html"}
+{"level":"debug","ts":1743836157.7296276,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/loading.html","result":"/tmp/appsmith/www/loading.html"}
+{"level":"debug","ts":1743836157.7296655,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/loading.html"}
+READY
+RESULT 885
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836157.729886,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"45040","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"Accept":["*/*"],"User-Agent":["curl/7.68.0"]}},"bytes_read":0,"user_id":"","duration":0.000663725,"size":2026,"status":200,"resp_headers":{"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Sat, 05 Apr 2025 06:55:18 GMT"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Etag":["\"d8yib9kvn9m81ka\""],"Accept-Ranges":["bytes"],"Content-Length":["2026"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["7bb32688-7e44-4bcd-8587-fdc571151be2"]},"uuid":"7bb32688-7e44-4bcd-8587-fdc571151be2"}
+READY
+RESULT 288
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:55:58,995] [main] requestId= userEmail= traceId= spanId= - Starting ServerApplication vv1.65 using Java 17.0.9 with PID 1720 (/opt/appsmith/server/mongo/server.jar started by root in /opt/appsmith/server/mongo)
+READY
+RESULT 306
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:55:59,023] [main] requestId= userEmail= traceId= spanId= - Running with Spring Boot v3.3.3, Spring v6.1.12
+[2025-04-05 06:55:59,029] [main] requestId= userEmail= traceId= spanId= - The following 1 profile is active: "production"
+READY
+RESULT 885
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836163.883965,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"40006","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.001039406,"size":2026,"status":200,"resp_headers":{"X-Appsmith-Request-Id":["43f354b0-ca09-4d80-9ae4-1ef7dd9f5c71"],"Vary":["Accept-Encoding"],"Last-Modified":["Sat, 05 Apr 2025 06:55:18 GMT"],"Content-Security-Policy":["frame-ancestors 'self' *"],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"Content-Length":["2026"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d8yib9kvn9m81ka\""]},"uuid":"43f354b0-ca09-4d80-9ae4-1ef7dd9f5c71"}
+READY
+RESULT 800
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836163.8834329,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"40006","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/loading.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/loading.html"}
+{"level":"debug","ts":1743836163.883529,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/loading.html","result":"/tmp/appsmith/www/loading.html"}
+{"level":"debug","ts":1743836163.8835833,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/loading.html"}
+READY
+RESULT 218
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:56:17,952] [main] requestId= userEmail= traceId= spanId= - Multiple Spring Data modules found, entering strict repository configuration mode
+READY
+RESULT 209
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:56:17,964] [main] requestId= userEmail= traceId= spanId= - Bootstrapping Spring Data Reactive MongoDB repositories in DEFAULT mode.
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836180.7073846,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"48288","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000680423,"size":2026,"status":200,"resp_headers":{"X-Request-Id":["invalid_request_id"],"Etag":["\"d8yib9kvn9m81ka\""],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"Content-Length":["2026"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["8c1834ba-a30b-4da1-9779-b23f9e4a5152"],"X-Content-Type-Options":["nosniff"],"Last-Modified":["Sat, 05 Apr 2025 06:55:18 GMT"],"Vary":["Accept-Encoding"]},"uuid":"8c1834ba-a30b-4da1-9779-b23f9e4a5152"}
+READY
+RESULT 800
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836180.707096,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"48288","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/loading.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/loading.html"}
+{"level":"debug","ts":1743836180.7071402,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/loading.html","result":"/tmp/appsmith/www/loading.html"}
+{"level":"debug","ts":1743836180.7071705,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/loading.html"}
+READY
+RESULT 238
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:56:20,819] [main] requestId= userEmail= traceId= spanId= - Finished Spring Data repository scanning in 2807 ms. Found 45 Reactive MongoDB repository interfaces.
+READY
+RESULT 237
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:56:36,734] [main] requestId= userEmail= traceId= spanId= - Application started with build version v1.65, and commitSha 4a142af9e612d8ea5bd549541cb682c8842ca3db
+READY
+RESULT 800
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836197.056173,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"42242","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/loading.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/loading.html"}
+{"level":"debug","ts":1743836197.0563846,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/loading.html","result":"/tmp/appsmith/www/loading.html"}
+{"level":"debug","ts":1743836197.0564616,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/loading.html"}
+READY
+RESULT 885
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836197.056752,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"42242","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.001147084,"size":2026,"status":200,"resp_headers":{"X-Content-Type-Options":["nosniff"],"Etag":["\"d8yib9kvn9m81ka\""],"Last-Modified":["Sat, 05 Apr 2025 06:55:18 GMT"],"Accept-Ranges":["bytes"],"Content-Length":["2026"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["cfadd9a2-a434-4f20-bed9-b1317a551ae8"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"]},"uuid":"cfadd9a2-a434-4f20-bed9-b1317a551ae8"}
+READY
+RESULT 170
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:56:37,533] [main] requestId= userEmail= traceId= spanId= - Found MongoDB uri configuring now
+READY
+RESULT 3014
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:56:41,363] [main] requestId= userEmail= traceId= spanId= - MongoClient with metadata {"driver": {"name": "mongo-java-driver|reactive-streams|spring-boot", "version": "5.0.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "5.15.167.4-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/17.0.9+9", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='appsmith', source='appsmith', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@6bf70600, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@3bc33ad9], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3ca5da54, com.mongodb.Jep395RecordCodecProvider@57a0aeb8, com.mongodb.KotlinCodecProvider@45f70f68]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@2fa4888c], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+READY
+RESULT 3604
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:56:41,613] [cluster-ClusterId{value='67f0d42890af4c309f5d42f1', description='null'}-localhost:27017] requestId= userEmail= traceId= spanId= - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.lambda$operationComplete$1(NettyStream.java:527)
+	at com.mongodb.internal.Locks.lambda$withLock$0(Locks.java:33)
+	at com.mongodb.internal.Locks.checkedWithLock(Locks.java:45)
+	at com.mongodb.internal.Locks.withLock(Locks.java:39)
+	at com.mongodb.internal.Locks.withLock(Locks.java:32)
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:514)
+	at com.mongodb.internal.connection.netty.NettyStream$OpenChannelFutureListener.operationComplete(NettyStream.java:500)
+	at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
+	at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
+	at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
+	at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
+	at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
+	at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:326)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:342)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/[0:0:0:0:0:0:0:1]:27017
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:336)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:339)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:994)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+READY
+RESULT 862
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:56:52,485] [cluster-ClusterId{value='67f0d42890af4c309f5d42f1', description='null'}-localhost:27017] requestId= userEmail= traceId= spanId= - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=744921088, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff000000000000001d, setVersion=1, topologyVersion=TopologyVersion{processId=67f0d3ef37f7261f7fe31291, counter=6}, lastWriteDate=Sat Apr 05 06:56:46 UTC 2025, lastUpdateTimeNanos=27547169116245}
+READY
+RESULT 800
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836213.441557,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"38282","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/loading.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/loading.html"}
+{"level":"debug","ts":1743836213.4417007,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/loading.html","result":"/tmp/appsmith/www/loading.html"}
+{"level":"debug","ts":1743836213.4417503,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/loading.html"}
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836213.4422019,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"38282","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.001147669,"size":2026,"status":200,"resp_headers":{"Etag":["\"d8yib9kvn9m81ka\""],"Last-Modified":["Sat, 05 Apr 2025 06:55:18 GMT"],"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["bbc92797-de48-49c3-a13b-d6835ba25719"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Content-Length":["2026"],"X-Content-Type-Options":["nosniff"]},"uuid":"bbc92797-de48-49c3-a13b-d6835ba25719"}
+READY
+RESULT 3002
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:02,977] [main] requestId= userEmail= traceId= spanId= - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "5.0.1"}, "os": {"type": "Linux", "name": "Linux", "architecture": "amd64", "version": "5.15.167.4-microsoft-standard-WSL2"}, "platform": "Java/Eclipse Adoptium/17.0.9+9", "env": {"container": {"runtime": "docker"}}} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='appsmith', source='appsmith', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=NettyTransportSettings{eventLoopGroup=io.netty.channel.nio.NioEventLoopGroup@1a2bcce1, socketChannelClass=null, allocator=null, sslContext=null}, commandListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsCommandListener@3bc33ad9], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3ca5da54, com.mongodb.Jep395RecordCodecProvider@57a0aeb8, com.mongodb.KotlinCodecProvider@45f70f68]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[io.micrometer.core.instrument.binder.mongodb.MongoMetricsConnectionPoolListener@2fa4888c], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+READY
+RESULT 861
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:03,045] [cluster-ClusterId{value='67f0d43e90af4c309f5d42f2', description='null'}-localhost:27017] requestId= userEmail= traceId= spanId= - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=71768656, setName='mr1', canonicalAddress=localhost:27017, hosts=[localhost:27017], passives=[], arbiters=[], primary='localhost:27017', tagSet=TagSet{[]}, electionId=7fffffff000000000000001d, setVersion=1, topologyVersion=TopologyVersion{processId=67f0d3ef37f7261f7fe31291, counter=6}, lastWriteDate=Sat Apr 05 06:56:56 UTC 2025, lastUpdateTimeNanos=27557793127080}
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836230.1328871,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"34724","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.001147019,"size":2026,"status":200,"resp_headers":{"Etag":["\"d8yib9kvn9m81ka\""],"Content-Type":["text/html; charset=utf-8"],"Content-Length":["2026"],"X-Appsmith-Request-Id":["ef250b52-2a71-47cb-9c51-4ba18209fbc4"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Last-Modified":["Sat, 05 Apr 2025 06:55:18 GMT"],"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"]},"uuid":"ef250b52-2a71-47cb-9c51-4ba18209fbc4"}
+READY
+RESULT 800
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836230.132543,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"34724","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/loading.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/loading.html"}
+{"level":"debug","ts":1743836230.1325932,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/loading.html","result":"/tmp/appsmith/www/loading.html"}
+{"level":"debug","ts":1743836230.1326241,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/loading.html"}
+READY
+RESULT 156
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:15,294] [main] requestId= userEmail= traceId= spanId= - Enabled plugins: []
+READY
+RESULT 157
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:15,295] [main] requestId= userEmail= traceId= spanId= - Disabled plugins: []
+READY
+RESULT 177
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:15,342] [main] requestId= userEmail= traceId= spanId= - PF4J version 3.10.0 in 'deployment' mode
+READY
+RESULT 185
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,284] [main] requestId= userEmail= traceId= spanId= - Plugin 'appsmithai-plugin@1.0-SNAPSHOT' resolved
+READY
+RESULT 2588
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,285] [main] requestId= userEmail= traceId= spanId= - Plugin 'saas-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,286] [main] requestId= userEmail= traceId= spanId= - Plugin 'google-sheets-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,286] [main] requestId= userEmail= traceId= spanId= - Plugin 'js-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,286] [main] requestId= userEmail= traceId= spanId= - Plugin 'smtp-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,291] [main] requestId= userEmail= traceId= spanId= - Plugin 'oracle-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,292] [main] requestId= userEmail= traceId= spanId= - Plugin 'amazons3-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,292] [main] requestId= userEmail= traceId= spanId= - Plugin 'mysql-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,292] [main] requestId= userEmail= traceId= spanId= - Plugin 'restapi-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,292] [main] requestId= userEmail= traceId= spanId= - Plugin 'postgres-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,292] [main] requestId= userEmail= traceId= spanId= - Plugin 'googleai-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,292] [main] requestId= userEmail= traceId= spanId= - Plugin 'snowflake-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,292] [main] requestId= userEmail= traceId= spanId= - Plugin 'anthropic-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,293] [main] requestId= userEmail= traceId= spanId= - Plugin 'elasticsearch-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,295] [main] requestId= userEmail= traceId= spanId= - Plugin 'mssql-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,298] [main] requestId= userEmail= traceId= spanId= - Plugin 'redshift-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,298] [main] requestId= userEmail= traceId= spanId= - Plugin 'mongo-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,298] [main] requestId= userEmail= traceId= spanId= - Plugin 'databricks-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,299] [main] requestId= userEmail= traceId= spanId= - Plugin 'graphql-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,299] [main] requestId= userEmail= traceId= spanId= - Plugin 'aws-lambda-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,299] [main] requestId= userEmail= traceId= spanId= - Plugin 'openai-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,300] [main] requestId= userEmail= traceId= spanId= - Plugin 'dynamo-plugin@1.0-SNAPSHOT' resolved
+READY
+RESULT 543
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,300] [main] requestId= userEmail= traceId= spanId= - Plugin 'arangodb-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,307] [main] requestId= userEmail= traceId= spanId= - Plugin 'redis-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,307] [main] requestId= userEmail= traceId= spanId= - Plugin 'firestore-plugin@1.0-SNAPSHOT' resolved
+[2025-04-05 06:57:17,307] [main] requestId= userEmail= traceId= spanId= - Start plugin 'appsmithai-plugin@1.0-SNAPSHOT'
+READY
+RESULT 176
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,416] [main] requestId= userEmail= traceId= spanId= - Start plugin 'saas-plugin@1.0-SNAPSHOT'
+READY
+RESULT 185
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,428] [main] requestId= userEmail= traceId= spanId= - Start plugin 'google-sheets-plugin@1.0-SNAPSHOT'
+READY
+RESULT 174
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,525] [main] requestId= userEmail= traceId= spanId= - Start plugin 'js-plugin@1.0-SNAPSHOT'
+READY
+RESULT 176
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,533] [main] requestId= userEmail= traceId= spanId= - Start plugin 'smtp-plugin@1.0-SNAPSHOT'
+READY
+RESULT 178
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,551] [main] requestId= userEmail= traceId= spanId= - Start plugin 'oracle-plugin@1.0-SNAPSHOT'
+READY
+RESULT 180
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,628] [main] requestId= userEmail= traceId= spanId= - Start plugin 'amazons3-plugin@1.0-SNAPSHOT'
+READY
+RESULT 177
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,657] [main] requestId= userEmail= traceId= spanId= - Start plugin 'mysql-plugin@1.0-SNAPSHOT'
+READY
+RESULT 179
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,707] [main] requestId= userEmail= traceId= spanId= - Start plugin 'restapi-plugin@1.0-SNAPSHOT'
+READY
+RESULT 180
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,725] [main] requestId= userEmail= traceId= spanId= - Start plugin 'postgres-plugin@1.0-SNAPSHOT'
+READY
+RESULT 180
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,745] [main] requestId= userEmail= traceId= spanId= - Start plugin 'googleai-plugin@1.0-SNAPSHOT'
+READY
+RESULT 181
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,749] [main] requestId= userEmail= traceId= spanId= - Start plugin 'snowflake-plugin@1.0-SNAPSHOT'
+READY
+RESULT 181
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,821] [main] requestId= userEmail= traceId= spanId= - Start plugin 'anthropic-plugin@1.0-SNAPSHOT'
+READY
+RESULT 185
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,835] [main] requestId= userEmail= traceId= spanId= - Start plugin 'elasticsearch-plugin@1.0-SNAPSHOT'
+READY
+RESULT 177
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,859] [main] requestId= userEmail= traceId= spanId= - Start plugin 'mssql-plugin@1.0-SNAPSHOT'
+READY
+RESULT 180
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,899] [main] requestId= userEmail= traceId= spanId= - Start plugin 'redshift-plugin@1.0-SNAPSHOT'
+READY
+RESULT 177
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,932] [main] requestId= userEmail= traceId= spanId= - Start plugin 'mongo-plugin@1.0-SNAPSHOT'
+READY
+RESULT 182
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:17,974] [main] requestId= userEmail= traceId= spanId= - Start plugin 'databricks-plugin@1.0-SNAPSHOT'
+READY
+RESULT 179
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:18,024] [main] requestId= userEmail= traceId= spanId= - Start plugin 'graphql-plugin@1.0-SNAPSHOT'
+READY
+RESULT 182
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:18,042] [main] requestId= userEmail= traceId= spanId= - Start plugin 'aws-lambda-plugin@1.0-SNAPSHOT'
+READY
+RESULT 178
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:18,240] [main] requestId= userEmail= traceId= spanId= - Start plugin 'openai-plugin@1.0-SNAPSHOT'
+READY
+RESULT 178
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:18,251] [main] requestId= userEmail= traceId= spanId= - Start plugin 'dynamo-plugin@1.0-SNAPSHOT'
+READY
+RESULT 180
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:18,292] [main] requestId= userEmail= traceId= spanId= - Start plugin 'arangodb-plugin@1.0-SNAPSHOT'
+READY
+RESULT 177
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:18,319] [main] requestId= userEmail= traceId= spanId= - Start plugin 'redis-plugin@1.0-SNAPSHOT'
+READY
+RESULT 181
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:18,332] [main] requestId= userEmail= traceId= spanId= - Start plugin 'firestore-plugin@1.0-SNAPSHOT'
+READY
+RESULT 885
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836246.830118,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"56182","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.002890243,"size":2026,"status":200,"resp_headers":{"X-Request-Id":["invalid_request_id"],"Etag":["\"d8yib9kvn9m81ka\""],"Accept-Ranges":["bytes"],"X-Appsmith-Request-Id":["08782db0-69fa-4254-ba20-7bb57764df60"],"X-Content-Type-Options":["nosniff"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Sat, 05 Apr 2025 06:55:18 GMT"],"Content-Length":["2026"],"Content-Security-Policy":["frame-ancestors 'self' *"]},"uuid":"08782db0-69fa-4254-ba20-7bb57764df60"}
+READY
+RESULT 801
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836246.8290577,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"56182","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/loading.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/loading.html"}
+{"level":"debug","ts":1743836246.8296535,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/loading.html","result":"/tmp/appsmith/www/loading.html"}
+{"level":"debug","ts":1743836246.8297179,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/loading.html"}
+READY
+RESULT 575
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:29,576] [main] requestId= userEmail= traceId= spanId= - A MeterFilter is being configured after a Meter has been registered to this registry. All MeterFilters should be configured before any Meters are registered. If that is not possible or you have a use case where it should be allowed, let the Micrometer maintainers know at https://github.com/micrometer-metrics/micrometer/issues/4920. Enable DEBUG level logging on this logger to see a stack trace of the call configuring this MeterFilter.
+READY
+RESULT 176
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:32,032] [main] requestId= userEmail= traceId= spanId= - Mongock runner COMMUNITY version[5.1.6]
+READY
+RESULT 169
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:32,032] [main] requestId= userEmail= traceId= spanId= - Running Mongock with NO metadata
+READY
+RESULT 293
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:32,033] [main] requestId= userEmail= traceId= spanId= - Property transaction-enabled not provided. It will become true as default in next versions. Set explicit value to false in case transaction are not desired.
+READY
+RESULT 259
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:32,034] [main] requestId= userEmail= traceId= spanId= - Property transaction-enabled not provided, but driver is transactionable. BY DEFAULT MONGOCK WILL RUN IN TRANSACTION MODE.
+READY
+RESULT 207
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:32,439] [main] requestId= userEmail= traceId= spanId= - Reflections took 303 ms to scan 1 urls, producing 6 keys and 86 values
+READY
+RESULT 206
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:32,570] [main] requestId= userEmail= traceId= spanId= - Reflections took 67 ms to scan 1 urls, producing 6 keys and 86 values
+READY
+RESULT 171
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:33,960] [main] requestId= userEmail= traceId= spanId= - Mongock trying to acquire the lock
+READY
+RESULT 198
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,232] [main] requestId= userEmail= traceId= spanId= - Mongock acquired the lock until: Sat Apr 05 06:58:33 UTC 2025
+READY
+RESULT 172
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,233] [Thread-3] requestId= userEmail= traceId= spanId= - Starting mongock lock daemon...
+READY
+RESULT 222
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,330] [main] requestId= userEmail= traceId= spanId= - Mongock starting the data migration sequence id[2025-04-05T06:57:31.520675128-725]...
+READY
+RESULT 284
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,364] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="initialize-schema-version", "type"="execution", "author"="", "class"="DatabaseChangelog0", "method"="initializeSchemaVersion"}
+READY
+RESULT 711
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,366] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="initial-plugins", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="initialPlugins"}
+[2025-04-05 06:57:34,366] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="initial-indexes", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addInitialIndexes"}
+[2025-04-05 06:57:34,367] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="set-initial-sequence-for-datasource", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="setInitialSequenceForDatasource"}
+READY
+RESULT 2732
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,367] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="set-plugin-image-and-docs-link", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="setPluginImageAndDocsLink"}
+[2025-04-05 06:57:34,367] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="install-mysql-plugins", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="mysqlPlugin"}
+[2025-04-05 06:57:34,367] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-database-documentation-links", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="updateDatabaseDocumentationLinks"}
+[2025-04-05 06:57:34,367] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="generate-unique-id-for-instance", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="generateUniqueIdForInstance"}
+[2025-04-05 06:57:34,367] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="fix-password-reset-token-expiration", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="fixTokenExpiration"}
+[2025-04-05 06:57:34,367] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-elastic-search-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addElasticSearchPlugin"}
+[2025-04-05 06:57:34,367] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-dynamo-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addDynamoPlugin"}
+[2025-04-05 06:57:34,368] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="use-png-logos", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="usePngLogos"}
+[2025-04-05 06:57:34,368] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-redis-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addRedisPlugin"}
+[2025-04-05 06:57:34,368] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-msSql-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addMsSqlPlugin"}
+[2025-04-05 06:57:34,368] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="createNewPageIndexAfterDroppingNewPage", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addNewPageIndexAfterDroppingNewPage"}
+[2025-04-05 06:57:34,369] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="createNewActionIndexAfterDroppingNewAction", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addNewActionIndexAfterDroppingNewAction"}
+READY
+RESULT 559
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,370] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="new-page-new-action-add-indexes", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addNewPageAndNewActionNewIndexes"}
+[2025-04-05 06:57:34,374] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-action-index-to-single-multiple-indices", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="updateActionIndexToSingleMultipleIndices"}
+READY
+RESULT 2123
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,375] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-firestore-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addFirestorePlugin"}
+[2025-04-05 06:57:34,375] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-redshift-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addRedshiftPlugin"}
+[2025-04-05 06:57:34,375] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="clear-userdata-collection", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="clearUserDataCollection"}
+[2025-04-05 06:57:34,375] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-database-documentation-links-v1-2-1", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="updateDatabaseDocumentationLinks_v1_2_1"}
+[2025-04-05 06:57:34,375] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-amazons3-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addAmazonS3Plugin"}
+[2025-04-05 06:57:34,376] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-plugin-datasource-form-components", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="updatePluginDatasourceFormComponents"}
+[2025-04-05 06:57:34,376] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-s3-datasource-configuration-and-label", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="updateS3DatasourceConfigurationAndLabel"}
+[2025-04-05 06:57:34,376] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-google-sheets-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addGoogleSheetsPlugin"}
+[2025-04-05 06:57:34,376] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="mark-instance-unregistered", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="markInstanceAsUnregistered"}
+READY
+RESULT 4434
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,377] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-snowflake-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addSnowflakePlugin"}
+[2025-04-05 06:57:34,379] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-arangodb-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addArangoDBPlugin"}
+[2025-04-05 06:57:34,379] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="set-svg-logo-to-plugins", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="setSvgLogoToPluginIcons"}
+[2025-04-05 06:57:34,379] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="create-plugin-reference-for-genarate-CRUD-page", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="createPluginReferenceForGenerateCRUDPage"}
+[2025-04-05 06:57:34,380] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="create-plugin-reference-for-S3-GSheet-genarate-CRUD-page", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="createPluginReferenceForS3AndGSheetGenerateCRUDPage"}
+[2025-04-05 06:57:34,380] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-js-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addJSPlugin"}
+[2025-04-05 06:57:34,380] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-plugin-package-name-index", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="updatePluginPackageNameIndexToPluginNamePackageNameAndVersion"}
+[2025-04-05 06:57:34,380] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="migrate-s3-to-uqi", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="migrateS3PluginToUqi"}
+[2025-04-05 06:57:34,380] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-smtp-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addSmtpPluginPlugin"}
+[2025-04-05 06:57:34,380] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-google-sheets-plugin-name", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="addPluginNameForGoogleSheets"}
+[2025-04-05 06:57:34,381] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="migrate-firestore-to-uqi", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="migrateFirestorePluginToUqi"}
+[2025-04-05 06:57:34,381] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="migrate-firestore-to-uqi-3", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="migrateFirestorePluginToUqi3"}
+[2025-04-05 06:57:34,381] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-index-for-git", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="updateGitIndexes"}
+[2025-04-05 06:57:34,381] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="use-assets-cdn-for-plugin-icons", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="useAssetsCDNForPluginIcons"}
+[2025-04-05 06:57:34,381] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-index-for-newAction-actionCollection-userData", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="updateNewActionActionCollectionAndUserDataIndexes"}
+[2025-04-05 06:57:34,381] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="mark-mssql-crud-unavailable", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="markMSSQLCrudUnavailable"}
+[2025-04-05 06:57:34,381] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-index-for-newAction-actionCollection", "type"="execution", "author"="", "class"="DatabaseChangelog1", "method"="updateNewActionActionCollectionIndexes"}
+[2025-04-05 06:57:34,383] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="fix-plugin-title-casing", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="fixPluginTitleCasing"}
+[2025-04-05 06:57:34,384] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-git-indexes", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addIndexesForGit"}
+READY
+RESULT 276
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,413] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-workspace-indexes", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addWorkspaceIndexes"}
+READY
+RESULT 1636
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,413] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-default-tenant", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addDefaultTenant"}
+[2025-04-05 06:57:34,413] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="organization-to-workspace-indexes-recreate", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="organizationToWorkspaceIndexesRecreate"}
+[2025-04-05 06:57:34,413] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="flush-spring-redis-keys-2a", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="clearRedisCache2"}
+[2025-04-05 06:57:34,414] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-anonymousUser", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addAnonymousUser"}
+[2025-04-05 06:57:34,429] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-instance-config-object", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addInstanceConfigurationPlaceHolder"}
+[2025-04-05 06:57:34,430] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-anonymous-user-permission-group", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addAnonymousUserPermissionGroup"}
+[2025-04-05 06:57:34,430] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="create-themes-indices", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="createThemesIndices"}
+READY
+RESULT 234
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:34,915] [main] requestId= userEmail= traceId= spanId= - method[createSystemThemes3] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 277
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,402] [main] requestId= userEmail= traceId= spanId= - RE-APPLIED - {"id"="create-system-themes-v3", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="createSystemThemes3"}
+READY
+RESULT 1986
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,402] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="create-indices-on-permissions-for-performance", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addPermissionGroupIndex"}
+[2025-04-05 06:57:36,402] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-bad-theme-state", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="updateBadThemeState"}
+[2025-04-05 06:57:36,402] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-tenant-admin-permissions-instance-admin", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addTenantAdminPermissionsToInstanceAdmin"}
+[2025-04-05 06:57:36,402] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-graphql-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addGraphQLPlugin"}
+[2025-04-05 06:57:36,402] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="indices-recommended-by-mongodb-cloud", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addIndicesRecommendedByMongoCloud"}
+[2025-04-05 06:57:36,403] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-unique-index-for-uidstring", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addUniqueIndexOnUidString"}
+[2025-04-05 06:57:36,403] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="change-readPermissionGroup-to-readPermissionGroupMembers", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="modifyReadPermissionGroupToReadPermissionGroupMembers"}
+[2025-04-05 06:57:36,403] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="delete-permissions-in-permissionGroups", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="deletePermissionsInPermissionGroups"}
+READY
+RESULT 307
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,404] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="remove-usage-pulses-for-appsmith-cloud", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="removeUsagePulsesForAppsmithCloud"}
+READY
+RESULT 332
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,409] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-ssl-mode-settings-for-existing-mssql-datasources", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addSslModeSettingsForExistingMssqlDatasource"}
+READY
+RESULT 489
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,411] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-oracle-plugin", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="addOraclePlugin"}
+[2025-04-05 06:57:36,414] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-oracle-plugin-name", "type"="execution", "author"="", "class"="DatabaseChangelog2", "method"="updateOraclePluginName"}
+READY
+RESULT 611
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,421] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration003AddInstanceNameToTenantConfiguration] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,421] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-instance-name-env-variable-tenant-configuration", "type"="execution", "author"="default_author", "class"="Migration003AddInstanceNameToTenantConfiguration", "method"="addInstanceNameEnvVarToTenantConfiguration"}
+READY
+RESULT 606
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,442] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration004PermissionGroupDefaultWorkspaceIdMigration] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,442] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="migrate-default-workspace-id-to-default-domain-id", "type"="execution", "author"="default_author", "class"="Migration004PermissionGroupDefaultWorkspaceIdMigration", "method"="defaultWorkspaceIdMigration"}
+READY
+RESULT 614
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,458] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration005CreateIndexForApplicationSnapshotMigration] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,458] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="create-index-for-application-snapshot-collection", "type"="execution", "author"="default_author", "class"="Migration005CreateIndexForApplicationSnapshotMigration", "method"="addIndexOnApplicationIdAndChunkOrder"}
+READY
+RESULT 293
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,491] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration006ResetOnPageLoadEdgesInLayouts] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 324
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,491] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="reset-on-page-load-edges-in-layouts", "type"="execution", "author"="default_author", "class"="Migration006ResetOnPageLoadEdgesInLayouts", "method"="executeMigration"}
+READY
+RESULT 1118
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,511] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration007OptOutUnsupportedPluginsForAirGap] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,511] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="opt-out-unsupported-plugins-airgap-instance", "type"="execution", "author"="default_author", "class"="Migration007OptOutUnsupportedPluginsForAirGap", "method"="optOutUnsupportedPluginsForAirGapInstance"}
+[2025-04-05 06:57:36,515] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration008SupportNonHostedPluginsForAirgap] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,516] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="support-non-self-hosted-plugins-for-airgap", "type"="execution", "author"="default_author", "class"="Migration008SupportNonHostedPluginsForAirgap", "method"="supportNonHostedPluginsForAirgap"}
+READY
+RESULT 285
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,531] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration009UpdateOracleLogoToSVG] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 311
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,532] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-oracle-logo-to-svg", "type"="execution", "author"="default_author", "class"="Migration009UpdateOracleLogoToSVG", "method"="updateOracleLogoToSVG"}
+READY
+RESULT 540
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,548] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration010UpdatePluginDocsLink] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,549] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-plugins-docs-link", "type"="execution", "author"="default_author", "class"="Migration010UpdatePluginDocsLink", "method"="updatePluginDocumentationLinks"}
+READY
+RESULT 715
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,553] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration011CreateIndexDefaultDomainIdDefaultDomainTypeDropIndexDefaultWorkspaceId] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,553] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="create-index-default-domain-id-default-domain-type", "type"="execution", "author"="default_author", "class"="Migration011CreateIndexDefaultDomainIdDefaultDomainTypeDropIndexDefaultWorkspaceId", "method"="createNewIndexDefaultDomainIdDefaultDomainTypeAndDropOldIndexDefaultWorkspaceId"}
+READY
+RESULT 354
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,645] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration012RemoveStructureFromWithinDatasource] with arguments: [org.springframework.data.mongodb.core.MongoOperations, org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 343
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,646] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="remove-structure-from-within-datasource-modified", "type"="execution", "author"="default_author", "class"="Migration012RemoveStructureFromWithinDatasource", "method"="executeMigration"}
+READY
+RESULT 292
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,661] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration013AddEmailBodyTypeToSMTPPlugin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 316
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,663] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-smtp-email-body-type", "type"="execution", "author"="default_author", "class"="Migration013AddEmailBodyTypeToSMTPPlugin", "method"="addSmtpEmailBodyType"}
+READY
+RESULT 558
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,676] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration014AddIndexToDatasourceStorage] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,676] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="index-for-datasource-storage", "type"="execution", "author"="default_author", "class"="Migration014AddIndexToDatasourceStorage", "method"="addingIndexToDatasourceStorage"}
+READY
+RESULT 585
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,680] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration015AddPluginTypeIndexToNewActionCollection] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,681] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="app-id-plugin-type-index-for-new-action", "type"="execution", "author"="default_author", "class"="Migration015AddPluginTypeIndexToNewActionCollection", "method"="addingIndexToNewAction"}
+READY
+RESULT 1049
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,693] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration016RenameIndexesWithLongNames] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,694] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="rename-indexes-with-long-names", "type"="execution", "author"="default_author", "class"="Migration016RenameIndexesWithLongNames", "method"="executeMigration"}
+[2025-04-05 06:57:36,698] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration017UnsetEncryptionVersion2Fields] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,698] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="unset-not-encrypted-encryption-version-2-fields", "type"="execution", "author"="default_author", "class"="Migration017UnsetEncryptionVersion2Fields", "method"="executeMigration"}
+READY
+RESULT 567
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,710] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration018UpdateOraclePluginDocumentationLink] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,711] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-oracle-doc-link", "type"="execution", "author"="default_author", "class"="Migration018UpdateOraclePluginDocumentationLink", "method"="updateOracleDocumentationLink"}
+READY
+RESULT 578
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,718] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration019RemoveNullEnvIdDatasourceStructureDocuments] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,719] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="delete-null-envId-key-document", "type"="execution", "author"="default_author", "class"="Migration019RemoveNullEnvIdDatasourceStructureDocuments", "method"="executeMigration"}
+READY
+RESULT 351
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,751] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration021MoveGoogleMapsKeyToTenantConfiguration] with arguments: [org.springframework.data.mongodb.core.MongoTemplate, com.appsmith.server.configurations.CommonConfig]
+READY
+RESULT 342
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,752] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="move-google-maps-key-to-tenant-configuration", "type"="execution", "author"="default_author", "class"="Migration021MoveGoogleMapsKeyToTenantConfiguration", "method"="executeMigration"}
+READY
+RESULT 316
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,759] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration022AddConnectionMethodDefaultValueToAllMySQLDatasources] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 840
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,761] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-connection-method-default-value-for-mysql", "type"="execution", "author"="default_author", "class"="Migration022AddConnectionMethodDefaultValueToAllMySQLDatasources", "method"="updateConnectionMethodDefaultValueForMySQL"}
+[2025-04-05 06:57:36,768] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration023UpdateJSPluginIcon] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,769] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-js-plugin-icon", "type"="execution", "author"="default_author", "class"="Migration023UpdateJSPluginIcon", "method"="executeMigration"}
+READY
+RESULT 306
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,777] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration024EnableGenerateCRUDPageToggleForMssqlPlugin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 349
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,777] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="enable-generate-crud-page-for-mssql", "type"="execution", "author"="default_author", "class"="Migration024EnableGenerateCRUDPageToggleForMssqlPlugin", "method"="enableGenerateCRUDPageToggle"}
+READY
+RESULT 811
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,787] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration025AddIndexDeletedInApplication] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,787] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-index-application-deleted", "type"="execution", "author"="default_author", "class"="Migration025AddIndexDeletedInApplication", "method"="createIndexInApplicationCollection"}
+[2025-04-05 06:57:36,792] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration025RemoveUnassignPermissionFromUnnecessaryRoles] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 362
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,793] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="remove-unassign-permission-from-workspace-dev-viewer-roles", "type"="execution", "author"="default_author", "class"="Migration025RemoveUnassignPermissionFromUnnecessaryRoles", "method"="executeMigration"}
+READY
+RESULT 579
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,807] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration026AddIndexTenantAndDeletedInWorkspace] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,808] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-index-workspace-tenant-deleted", "type"="execution", "author"="default_author", "class"="Migration026AddIndexTenantAndDeletedInWorkspace", "method"="addIndexInWorkspaceCollection"}
+READY
+RESULT 302
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,826] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration027AddIndexDatasourceIdAndDeletedInAction] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 603
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,826] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="new-action-compound-index-datasource-id", "type"="execution", "author"="default_author", "class"="Migration027AddIndexDatasourceIdAndDeletedInAction", "method"="addIndexInNewActionCollection"}
+[2025-04-05 06:57:36,829] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration028TagUserManagementRolesWithoutDefaultDomainTypeAndId] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 406
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,830] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="tag-user-management-roles-without-default-domain-type-and-id", "type"="execution", "author"="default_author", "class"="Migration028TagUserManagementRolesWithoutDefaultDomainTypeAndId", "method"="tagUserManagementRolesWithoutDefaultDomainTypeAndId"}
+READY
+RESULT 308
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,849] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration029PopulateDefaultDomainIdInUserManagementRoles] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 383
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,853] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="populate-default-domain-id-in-user-management-roles", "type"="execution", "author"="default_author", "class"="Migration029PopulateDefaultDomainIdInUserManagementRoles", "method"="populateDefaultDomainIdInUserManagementRoles"}
+READY
+RESULT 297
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,869] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration030TagUsersWithNoUserManagementRoles] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 3868
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,870] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="tag-users-with-no-user-management-roles", "type"="execution", "author"="default_author", "class"="Migration030TagUsersWithNoUserManagementRoles", "method"="tagUsersWithNoUserManagementRoles"}
+[2025-04-05 06:57:36,888] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration031CreateUserManagementRolesForUsersTaggedIn030] with arguments: [org.springframework.data.mongodb.core.MongoTemplate, com.appsmith.server.solutions.PolicySolution]
+[2025-04-05 06:57:36,888] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="create-user-management-roles-for-users-tagged-in-migration-030", "type"="execution", "author"="default_author", "class"="Migration031CreateUserManagementRolesForUsersTaggedIn030", "method"="createUserManagementRolesForUsersTaggedInMigration030"}
+[2025-04-05 06:57:36,902] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration032AddingXmlParserToApplicationLibraries] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,903] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-xml-parser-to-application-jslibs", "type"="execution", "author"="default_author", "class"="Migration032AddingXmlParserToApplicationLibraries", "method"="addXmlParserEntryToEachApplication"}
+[2025-04-05 06:57:36,918] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration033AddOpenAIPlugin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,918] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-open-ai-plugin", "type"="execution", "author"="default_author", "class"="Migration033AddOpenAIPlugin", "method"="addPluginToDbAndWorkspace"}
+[2025-04-05 06:57:36,921] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration034ChangeOpenAIIntegrationDocumentationLink] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,933] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="change-open-ai-integration-documentation-link", "type"="execution", "author"="default_author", "class"="Migration034ChangeOpenAIIntegrationDocumentationLink", "method"="changeDocumentationLink"}
+[2025-04-05 06:57:36,936] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration035AddAnthropicPlugin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,936] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-anthropic-plugin", "type"="execution", "author"="default_author", "class"="Migration035AddAnthropicPlugin", "method"="addPluginToDbAndWorkspace"}
+[2025-04-05 06:57:36,966] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration035RemoveMockDbEndPointInDatasourceInSelfHostedInstance] with arguments: [org.springframework.data.mongodb.core.MongoTemplate, com.appsmith.server.configurations.CommonConfig, com.appsmith.server.solutions.EnvManager]
+[2025-04-05 06:57:36,966] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="remove-mockdb-endpoint-in-datasource-self-hosted-instance", "type"="execution", "author"="default_author", "class"="Migration035RemoveMockDbEndPointInDatasourceInSelfHostedInstance", "method"="removeMockDbEndpointInDatasource"}
+[2025-04-05 06:57:36,969] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration036AddRecentlyUsedEntitiesForUserData] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 2892
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:36,982] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-recently-used-entities-for-user", "type"="execution", "author"="default_author", "class"="Migration036AddRecentlyUsedEntitiesForUserData", "method"="addRecentlyUsedEntitiesForUserData"}
+[2025-04-05 06:57:36,985] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration037AddCompoundIndexForNameAndDeletedAt] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,985] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-compound-index-name-deleted", "type"="execution", "author"="default_author", "class"="Migration037AddCompoundIndexForNameAndDeletedAt", "method"="addIndexInWorkspaceAndApplicationsCollection"}
+[2025-04-05 06:57:36,999] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration037MarkAnonymousUserAsSystemGenerated] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:36,999] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="mark-anonymous-user-as-system-generated", "type"="execution", "author"="default_author", "class"="Migration037MarkAnonymousUserAsSystemGenerated", "method"="executeMigration"}
+[2025-04-05 06:57:37,012] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration038AddCompoundIndexForActionCollection] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,013] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-compound-index-action-collection", "type"="execution", "author"="default_author", "class"="Migration038AddCompoundIndexForActionCollection", "method"="addIndexInActionCollection"}
+[2025-04-05 06:57:37,015] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration038AddGoogleAIPlugin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,016] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-google-ai-plugin", "type"="execution", "author"="default_author", "class"="Migration038AddGoogleAIPlugin", "method"="addPluginToDbAndWorkspace"}
+[2025-04-05 06:57:37,029] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration039AddCompoundIndexForDatasourceStorage] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,029] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-compound-index-datasource-storage", "type"="execution", "author"="default_author", "class"="Migration039AddCompoundIndexForDatasourceStorage", "method"="addIndexInDatasourceStorageCollection"}
+READY
+RESULT 754
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,034] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration039AddDatabricksPlugin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,034] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-databricks-plugin", "type"="execution", "author"="default_author", "class"="Migration039AddDatabricksPlugin", "method"="addPluginToDbAndWorkspace"}
+[2025-04-05 06:57:37,049] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration039OpenAIMessagesJsToggle] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 343
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,050] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="move-messages-to-data-key-in-openai", "type"="execution", "author"="default_author", "class"="Migration039OpenAIMessagesJsToggle", "method"="moveMessagesToDataKeyForSupportingJsToggle"}
+READY
+RESULT 2638
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,065] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration040AddAWSLambdaPlugin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,066] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-aws-lambda-plugin", "type"="execution", "author"="default_author", "class"="Migration040AddAWSLambdaPlugin", "method"="addPluginToDbAndWorkspace"}
+[2025-04-05 06:57:37,068] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration040AddAppsmithAiPlugin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,068] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-appsmith-ai-plugin", "type"="execution", "author"="default_author", "class"="Migration040AddAppsmithAiPlugin", "method"="addPluginToDbAndWorkspace"}
+[2025-04-05 06:57:37,083] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration041TagWorkspacesForGitOperationsPermissionMigration] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,084] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="tag-workspaces-to-migrate-adding-git-permissions", "type"="execution", "author"="default_author", "class"="Migration041TagWorkspacesForGitOperationsPermissionMigration", "method"="addPermissionForGitOperationsToExistingWorkspaces"}
+[2025-04-05 06:57:37,087] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration042AddPermissionsForGitOperations] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,092] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-permissions-for-git-operations", "type"="execution", "author"="default_author", "class"="Migration042AddPermissionsForGitOperations", "method"="addPermissionForGitOperationsToExistingApplications"}
+[2025-04-05 06:57:37,106] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration043AddIndexActionCollectionPageID] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,107] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-index-to-action-collection-default-resources-pageid", "type"="execution", "author"="default_author", "class"="Migration043AddIndexActionCollectionPageID", "method"="addIndexToActionCollectionCollection"}
+READY
+RESULT 794
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,121] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration044AddIndexesToDomainObjects] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,121] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-index-to-domain-objects", "type"="execution", "author"="default_author", "class"="Migration044AddIndexesToDomainObjects", "method"="addIndexToDomainObjects"}
+[2025-04-05 06:57:37,124] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration045AddDefaultAppsmithAiDatasourceForOrphanActions] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 1406
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,136] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-default-appsmith-datasource", "type"="execution", "author"="default_author", "class"="Migration045AddDefaultAppsmithAiDatasourceForOrphanActions", "method"="addDefaultAppsmithAiDatasourceForOrphanActions"}
+[2025-04-05 06:57:37,140] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration046DeleteArchivedPlugins] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,140] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="delete-archived-pluginsd", "type"="execution", "author"="default_author", "class"="Migration046DeleteArchivedPlugins", "method"="deleteArchivedPlugins"}
+[2025-04-05 06:57:37,143] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration047AddMissingFieldsInDefaultAppsmithAiDatasource] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,144] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-missing-fields-in-default-appsmith-datasource", "type"="execution", "author"="default_author", "class"="Migration047AddMissingFieldsInDefaultAppsmithAiDatasource", "method"="addMissingFieldsInDefaultAppsmithAiDatasource"}
+READY
+RESULT 570
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,157] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration048AddCompoundIndexToUserEntity] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,157] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-compound-index-in-user-collection", "type"="execution", "author"="default_author", "class"="Migration048AddCompoundIndexToUserEntity", "method"="addMissingIndexInUserCollection"}
+READY
+RESULT 1036
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,171] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration049RemoveLayoutBaseFields] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,171] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="remove-layout-base-fields", "type"="execution", "author"="default_author", "class"="Migration049RemoveLayoutBaseFields", "method"="execute"}
+[2025-04-05 06:57:37,174] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration050MoveAnthropicLegacyModelsInQueries] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,175] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="move-anthropic-legacy-models", "type"="execution", "author"="default_author", "class"="Migration050MoveAnthropicLegacyModelsInQueries", "method"="moveAnthropicLegacyModelsInQueries"}
+READY
+RESULT 566
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,180] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration051AddNewActionCollectionIdIndex] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,189] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-idx-new-action-coll-id", "type"="execution", "author"="default_author", "class"="Migration051AddNewActionCollectionIdIndex", "method"="addMissingIndexInNewActionCollection"}
+READY
+RESULT 553
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,193] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration052RemoveInvalidPluginsInWorkspaces] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,193] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="remove-invalid-plugins-in-workspaces", "type"="execution", "author"="default_author", "class"="Migration052RemoveInvalidPluginsInWorkspaces", "method"="execute"}
+READY
+RESULT 312
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,204] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration053AddApplicationDeletePagePermissionToApplications] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 944
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,206] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-app-delete-pages-permission-to-application", "type"="execution", "author"="default_author", "class"="Migration053AddApplicationDeletePagePermissionToApplications", "method"="addApplicationDeletePagesPermissionToApplication"}
+[2025-04-05 06:57:37,209] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration055AddIsAtomicPushAllowedEnvVarToTenantConfiguration] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,209] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-is-atomic-push-allowed-env-variable-tenant-configuration", "type"="execution", "author"="default_author", "class"="Migration055AddIsAtomicPushAllowedEnvVarToTenantConfiguration", "method"="executeMigration"}
+READY
+RESULT 608
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,224] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration056AddBranchNameAndDefaultArtifactIndexToApplication] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,224] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-idx-branch-name-default-artifact-id", "type"="execution", "author"="default_author", "class"="Migration056AddBranchNameAndDefaultArtifactIndexToApplication", "method"="createIndexForApplication"}
+READY
+RESULT 279
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,227] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration057MoveDRToBaseIds] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 294
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,239] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="move-dr-to-base-ids", "type"="execution", "author"="default_author", "class"="Migration057MoveDRToBaseIds", "method"="executeMigration"}
+READY
+RESULT 294
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,243] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration058AddIndexesToBranchAwareDomains] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 310
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,243] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-idx-branch-aware", "type"="execution", "author"="default_author", "class"="Migration058AddIndexesToBranchAwareDomains", "method"="executeMigration"}
+READY
+RESULT 352
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,370] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration059PolicySetToPolicyMap] with arguments: [org.springframework.data.mongodb.core.ReactiveMongoTemplate, com.appsmith.server.repositories.CacheableRepositoryHelper]
+READY
+RESULT 295
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,371] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="policy-set-to-policy-map", "type"="execution", "author"="default_author", "class"="Migration059PolicySetToPolicyMap", "method"="execute"}
+READY
+RESULT 286
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,384] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration060AddIndexesForPolicyMap] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 1339
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,385] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-idx-policy-map", "type"="execution", "author"="default_author", "class"="Migration060AddIndexesForPolicyMap", "method"="executeMigration"}
+[2025-04-05 06:57:37,389] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration061TenantPolicySetToPolicyMap] with arguments: [org.springframework.data.mongodb.core.MongoTemplate, com.appsmith.server.repositories.CacheableRepositoryHelper]
+[2025-04-05 06:57:37,389] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="migrate-policy-set-to-map-tenant", "type"="execution", "author"="default_author", "class"="Migration061TenantPolicySetToPolicyMap", "method"="executeMigration"}
+[2025-04-05 06:57:37,392] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration062AddEmptyPolicyMapForNullValues] with arguments: [org.springframework.data.mongodb.core.ReactiveMongoTemplate]
+[2025-04-05 06:57:37,393] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add_empty_policyMap_for_null_entries", "type"="execution", "author"="default_author", "class"="Migration062AddEmptyPolicyMapForNullValues", "method"="execute"}
+READY
+RESULT 235
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,394] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration063CacheBustSpringBoot3_3] with arguments: []
+READY
+RESULT 792
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,406] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="reset_session_oauth2_spring_3_3", "type"="execution", "author"="default_author", "class"="Migration063CacheBustSpringBoot3_3", "method"="execute"}
+[2025-04-05 06:57:37,408] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration064AddPluginDocUrlToRestApiPlugin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,409] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add_plugin_doc_url_to_rest_api_plugin", "type"="execution", "author"="default_author", "class"="Migration064AddPluginDocUrlToRestApiPlugin", "method"="execute"}
+READY
+RESULT 399
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,608] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration065_CopyTenantIdToOrganizationId] with arguments: [org.springframework.data.redis.core.ReactiveRedisOperations, com.fasterxml.jackson.databind.ObjectMapper, org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 313
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,610] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="copy-tenant-id-to-organization-id", "type"="execution", "author"="default_author", "class"="Migration065_CopyTenantIdToOrganizationId", "method"="execute"}
+READY
+RESULT 489
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,612] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration066_CacheBustTenantOrgMigration] with arguments: []
+[2025-04-05 06:57:37,612] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="cache-bust-tenant-org-migration", "type"="execution", "author"="default_author", "class"="Migration066_CacheBustTenantOrgMigration", "method"="execute"}
+READY
+RESULT 737
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,617] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration066_RenameInstanceAdminRoleToOrgAdmin] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,617] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="rename-instance-admin-role-to-org-admin-role", "type"="execution", "author"="default_author", "class"="Migration066_RenameInstanceAdminRoleToOrgAdmin", "method"="execute"}
+[2025-04-05 06:57:37,618] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration067_UpdateUserEmailIndex] with arguments: []
+READY
+RESULT 295
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,629] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="update-user-email-index", "type"="execution", "author"="default_author", "class"="Migration067_UpdateUserEmailIndex", "method"="execute"}
+READY
+RESULT 1125
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,632] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration068_AddOrganizationIdToPasswordResetToken] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,633] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-organization-id-to-password-reset-token", "type"="execution", "author"="default_author", "class"="Migration068_AddOrganizationIdToPasswordResetToken", "method"="execute"}
+[2025-04-05 06:57:37,636] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration069MigrateOrganizationConfigToInstanceConfig] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,636] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="migrate-organization-config-to-instance-config", "type"="execution", "author"="default_author", "class"="Migration069MigrateOrganizationConfigToInstanceConfig", "method"="migrateOrganizationConfigToInstanceConfig"}
+READY
+RESULT 618
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,650] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration070_AddOrganizationIdToEmailVerificationToken] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+[2025-04-05 06:57:37,651] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="add-organization-id-to-email-verification-token", "type"="execution", "author"="default_author", "class"="Migration070_AddOrganizationIdToEmailVerificationToken", "method"="addOrganizationIdToEmailVerificationToken"}
+READY
+RESULT 547
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:37,670] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration10000_UpdateSuperUser] with arguments: [org.springframework.data.mongodb.core.MongoTemplate, com.appsmith.server.repositories.CacheableRepositoryHelper, com.appsmith.server.solutions.PolicySolution, com.appsmith.server.acl.PolicyGenerator]
+[2025-04-05 06:57:37,670] [main] requestId= userEmail= traceId= spanId= - method[executeMigration] with arguments: []
+READY
+RESULT 295
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:38,056] [main] requestId= userEmail= traceId= spanId= - RE-APPLIED - {"id"="update-super-users", "type"="execution", "author"="default_author", "class"="Migration10000_UpdateSuperUser", "method"="executeMigration"}
+READY
+RESULT 291
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:38,063] [main] requestId= userEmail= traceId= spanId= - method[com.appsmith.server.migrations.db.ce.Migration020TransferToDatasourceStorage] with arguments: [org.springframework.data.mongodb.core.MongoTemplate]
+READY
+RESULT 530
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:38,069] [main] requestId= userEmail= traceId= spanId= - PASSED OVER - {"id"="migrate-configurations-to-data-storage-v2", "type"="execution", "author"="default_author", "class"="Migration020TransferToDatasourceStorage", "method"="executeMigration"}
+[2025-04-05 06:57:38,069] [main] requestId= userEmail= traceId= spanId= - Mongock releasing the lock
+[2025-04-05 06:57:38,069] [main] requestId= userEmail= traceId= spanId= - Mongock releasing the lock
+READY
+RESULT 257
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:38,173] [main] requestId= userEmail= traceId= spanId= - Mongock released the lock
+[2025-04-05 06:57:38,173] [main] requestId= userEmail= traceId= spanId= - Mongock has finished
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836263.9893286,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"56064","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000729568,"size":2026,"status":200,"resp_headers":{"Vary":["Accept-Encoding"],"Etag":["\"d8yib9kvn9m81ka\""],"Last-Modified":["Sat, 05 Apr 2025 06:55:18 GMT"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"Content-Length":["2026"],"X-Appsmith-Request-Id":["478fa339-9693-448f-b28b-264be13e2507"]},"uuid":"478fa339-9693-448f-b28b-264be13e2507"}
+READY
+RESULT 801
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836263.9890058,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"56064","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/loading.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/loading.html"}
+{"level":"debug","ts":1743836263.9890501,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/loading.html","result":"/tmp/appsmith/www/loading.html"}
+{"level":"debug","ts":1743836263.9890807,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/loading.html"}
+READY
+RESULT 186
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:44,579] [main] requestId= userEmail= traceId= spanId= - Exposing 1 endpoint beneath base path '/actuator'
+READY
+RESULT 170
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:47,652] [main] requestId= userEmail= traceId= spanId= - Netty started on port 8080 (http)
+READY
+RESULT 211
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:47,761] [main] requestId= userEmail= traceId= spanId= - Started ServerApplication in 116.375 seconds (process running for 122.905)
+READY
+RESULT 209
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:47,764] [main] requestId= userEmail= traceId= spanId= - Cleaning up and updating default organization policies on server startup
+READY
+RESULT 232
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:48,087] [main] requestId= userEmail= traceId=fe4120613b01ada21f519fdb0e26e6a4 spanId=f3302c97445d0c83 - Performing RTS health check of this instance...
+READY
+RESULT 296
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:48,153] [main] requestId= userEmail= traceId=fe4120613b01ada21f519fdb0e26e6a4 spanId=f3302c97445d0c83 - In memory cache miss for anonymous user permission groups. Fetching from DB and adding it to in memory storage.
+READY
+RESULT 208
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:48,185] [nioEventLoopGroup-3-8] requestId= userEmail= traceId= spanId= - Fetched and set conenncted mongo db version as: 5.0.30
+READY
+RESULT 179
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:48,650] [reactor-http-epoll-1] requestId= userEmail= traceId= spanId= - RTS health check succeeded
+READY
+RESULT 230
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:48,717] [parallel-1] requestId= userEmail=anonymousUser traceId=2a4aec323965eb5d6a357542c7c6b044 spanId=a3639473c78de8cd - Checking server health ...
+READY
+RESULT 170
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:54,524] [Thread-3] requestId= userEmail= traceId= spanId= - Cancelled mongock lock daemon
+READY
+RESULT 182
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:57,789] [scheduling-1] requestId= userEmail= traceId= spanId= - Acquired lock for: lock:fetchFeatures
+READY
+RESULT 228
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:57,791] [scheduling-1] requestId= userEmail= traceId=6f835922cfb0b6e2a35529e93b71bc7e spanId=f697d96079891cd4 - Fetching features for organizations
+READY
+RESULT 236
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:57,831] [lettuce-epollEventLoop-10-1] requestId= userEmail= traceId= spanId= - Cache entry evicted for key organizationNewFeatures:67ed7af229bfce1821ec8598
+READY
+RESULT 227
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:57:57,856] [lettuce-epollEventLoop-10-1] requestId= userEmail= traceId= spanId= - Cache miss for key organizationNewFeatures:67ed7af229bfce1821ec8598
+READY
+RESULT 127
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 06:57:57.867 * 1 changes in 15 seconds. Saving...
+READY
+RESULT 130
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 06:57:57.868 * Background saving started by pid 2361
+READY
+RESULT 109
+processname:redis groupname:redis pid:1717 channel:stdout
+2361:C 05 Apr 2025 06:57:57.909 * DB saved on disk
+READY
+RESULT 134
+processname:redis groupname:redis pid:1717 channel:stdout
+2361:C 05 Apr 2025 06:57:57.910 * RDB: 0 MB of memory used by copy-on-write
+READY
+RESULT 134
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 06:57:57.969 * Background saving terminated with success
+READY
+RESULT 791
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836279.5325208,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"56156","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Accept":["*/*"],"X-Request-Id":["invalid_request_id"],"User-Agent":["curl/7.68.0"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836279.5326123,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836279.5327103,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836279.5340445,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"56156","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"Accept":["*/*"],"User-Agent":["curl/7.68.0"]}},"bytes_read":0,"user_id":"","duration":0.002078096,"size":5571,"status":200,"resp_headers":{"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Content-Type-Options":["nosniff"],"Content-Type":["text/html; charset=utf-8"],"Etag":["\"d8yibkkuyo554ar\""],"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"Content-Length":["5571"],"X-Appsmith-Request-Id":["762ad44f-e822-452f-85e6-352a758161af"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"]},"uuid":"762ad44f-e822-452f-85e6-352a758161af"}
+READY
+RESULT 227
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:58:00,024] [reactor-http-epoll-2] requestId= userEmail= traceId= spanId= - Cache entry added for key organizationNewFeatures:67ed7af229bfce1821ec8598
+READY
+RESULT 199
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 06:58:13.012 * 1 changes in 15 seconds. Saving...
+1717:M 05 Apr 2025 06:58:13.013 * Background saving started by pid 2372
+READY
+RESULT 109
+processname:redis groupname:redis pid:1717 channel:stdout
+2372:C 05 Apr 2025 06:58:13.037 * DB saved on disk
+READY
+RESULT 134
+processname:redis groupname:redis pid:1717 channel:stdout
+2372:C 05 Apr 2025 06:58:13.038 * RDB: 0 MB of memory used by copy-on-write
+READY
+RESULT 134
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 06:58:13.113 * Background saving terminated with success
+READY
+RESULT 790
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836295.2879097,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"37780","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Accept":["*/*"],"X-Request-Id":["invalid_request_id"],"User-Agent":["curl/7.68.0"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836295.287969,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836295.2880003,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 885
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836295.288249,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"37780","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000631352,"size":5571,"status":200,"resp_headers":{"Vary":["Accept-Encoding"],"Etag":["\"d8yibkkuyo554ar\""],"Accept-Ranges":["bytes"],"Content-Length":["5571"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"X-Appsmith-Request-Id":["02e1534a-e0b3-4fcf-b309-83d492442d11"]},"uuid":"02e1534a-e0b3-4fcf-b309-83d492442d11"}
+READY
+RESULT 433
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836311.0992377,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"55240","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Accept":["*/*"],"X-Request-Id":["invalid_request_id"],"User-Agent":["curl/7.68.0"]}},"method":"GET","uri":"/index.html"}
+READY
+RESULT 885
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836311.099896,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"55240","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"Accept":["*/*"],"User-Agent":["curl/7.68.0"]}},"bytes_read":0,"user_id":"","duration":0.001198908,"size":5571,"status":200,"resp_headers":{"X-Appsmith-Request-Id":["d8b32497-4507-4063-8fed-559bb0cf459b"],"X-Content-Type-Options":["nosniff"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"Content-Security-Policy":["frame-ancestors 'self' *"],"Content-Length":["5571"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d8yibkkuyo554ar\""],"Accept-Ranges":["bytes"]},"uuid":"d8b32497-4507-4063-8fed-559bb0cf459b"}
+READY
+RESULT 415
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836311.09946,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836311.099513,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 790
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836326.8196099,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"57270","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Accept":["*/*"],"X-Request-Id":["invalid_request_id"],"User-Agent":["curl/7.68.0"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836326.819708,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836326.8197591,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 883
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836326.82015,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"57270","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"Accept":["*/*"],"User-Agent":["curl/7.68.0"]}},"bytes_read":0,"user_id":"","duration":0.00101759,"size":5571,"status":200,"resp_headers":{"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["927426b4-b7aa-47bc-a2cb-46cd6b0f2b6d"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"Etag":["\"d8yibkkuyo554ar\""],"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"Content-Length":["5571"]},"uuid":"927426b4-b7aa-47bc-a2cb-46cd6b0f2b6d"}
+READY
+RESULT 790
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836342.344688,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"60198","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"X-Request-Id":["invalid_request_id"],"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836342.3447475,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836342.3447914,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 885
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836342.345035,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"60198","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"Accept":["*/*"],"User-Agent":["curl/7.68.0"]}},"bytes_read":0,"user_id":"","duration":0.000640062,"size":5571,"status":200,"resp_headers":{"Vary":["Accept-Encoding"],"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"Content-Length":["5571"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["3b791f47-58a1-4340-8cd0-9f44cb9ee6c3"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d8yibkkuyo554ar\""],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"]},"uuid":"3b791f47-58a1-4340-8cd0-9f44cb9ee6c3"}
+READY
+RESULT 791
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836358.0315626,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"41068","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836358.0316439,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836358.0316942,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836358.0319939,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"41068","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000803471,"size":5571,"status":200,"resp_headers":{"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"X-Appsmith-Request-Id":["49796aea-3c7d-418d-a22c-1c2668d09c27"],"X-Content-Type-Options":["nosniff"],"Etag":["\"d8yibkkuyo554ar\""],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"Content-Length":["5571"],"Content-Security-Policy":["frame-ancestors 'self' *"]},"uuid":"49796aea-3c7d-418d-a22c-1c2668d09c27"}
+READY
+RESULT 791
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836374.2344847,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"45158","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836374.2345695,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836374.2346406,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836374.2349527,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"45158","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000888681,"size":5571,"status":200,"resp_headers":{"Etag":["\"d8yibkkuyo554ar\""],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"X-Appsmith-Request-Id":["387ed521-8144-4fac-89e5-eff9fccfb6ec"],"Content-Length":["5571"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Accept-Ranges":["bytes"]},"uuid":"387ed521-8144-4fac-89e5-eff9fccfb6ec"}
+READY
+RESULT 181
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:59:47,766] [scheduling-1] requestId= userEmail= traceId= spanId= - Acquired lock for: lock:pingSchedule
+READY
+RESULT 178
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 06:59:47,802] [scheduling-1] requestId= userEmail= traceId= spanId= - Acquired lock for: lock:pingStats
+READY
+RESULT 199
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 06:59:47.833 * 1 changes in 15 seconds. Saving...
+1717:M 05 Apr 2025 06:59:47.834 * Background saving started by pid 2440
+READY
+RESULT 109
+processname:redis groupname:redis pid:1717 channel:stdout
+2440:C 05 Apr 2025 06:59:48.013 * DB saved on disk
+READY
+RESULT 210
+processname:redis groupname:redis pid:1717 channel:stdout
+2440:C 05 Apr 2025 06:59:48.014 * RDB: 0 MB of memory used by copy-on-write
+1717:M 05 Apr 2025 06:59:48.035 * Background saving terminated with success
+READY
+RESULT 791
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836390.5369663,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"49108","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836390.5370522,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836390.5370946,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836390.5373676,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"49108","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000793672,"size":5571,"status":200,"resp_headers":{"Accept-Ranges":["bytes"],"Content-Length":["5571"],"X-Content-Type-Options":["nosniff"],"Content-Security-Policy":["frame-ancestors 'self' *"],"Etag":["\"d8yibkkuyo554ar\""],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"X-Appsmith-Request-Id":["ebf3fda7-2d67-4018-8d9b-6b09addf573a"]},"uuid":"ebf3fda7-2d67-4018-8d9b-6b09addf573a"}
+READY
+RESULT 789
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836406.3062272,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"53772","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836406.306263,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836406.306297,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 885
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836406.3065574,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"53772","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.00063276,"size":5571,"status":200,"resp_headers":{"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"Content-Length":["5571"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Etag":["\"d8yibkkuyo554ar\""],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"X-Appsmith-Request-Id":["ddd8c25d-4ca5-407a-99e3-24fc74ce2454"],"X-Content-Type-Options":["nosniff"]},"uuid":"ddd8c25d-4ca5-407a-99e3-24fc74ce2454"}
+READY
+RESULT 790
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836421.726334,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"55704","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836421.7264152,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836421.7264693,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836421.7268147,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"55704","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000778251,"size":5571,"status":200,"resp_headers":{"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"Content-Length":["5571"],"X-Appsmith-Request-Id":["02bfae18-4ff2-4a1b-9a9b-67ef5942e504"],"X-Content-Type-Options":["nosniff"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d8yibkkuyo554ar\""],"Content-Type":["text/html; charset=utf-8"],"Accept-Ranges":["bytes"],"Vary":["Accept-Encoding"]},"uuid":"02bfae18-4ff2-4a1b-9a9b-67ef5942e504"}
+READY
+RESULT 791
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836437.2032733,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"45152","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"],"X-Request-Id":["invalid_request_id"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836437.2033489,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836437.2034154,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836437.2037454,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"45152","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000941101,"size":5571,"status":200,"resp_headers":{"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Appsmith-Request-Id":["dfba12ea-96e1-40c1-90ce-ed1309a068b4"],"X-Content-Type-Options":["nosniff"],"X-Request-Id":["invalid_request_id"],"Etag":["\"d8yibkkuyo554ar\""],"Accept-Ranges":["bytes"],"Content-Length":["5571"]},"uuid":"dfba12ea-96e1-40c1-90ce-ed1309a068b4"}
+READY
+RESULT 788
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"debug","ts":1743836452.881435,"logger":"http.handlers.rewrite","msg":"rewrote request","request":{"remote_ip":"::1","remote_port":"40782","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/index.html","headers":{"Accept":["*/*"],"X-Request-Id":["invalid_request_id"],"User-Agent":["curl/7.68.0"]}},"method":"GET","uri":"/index.html"}
+{"level":"debug","ts":1743836452.881495,"logger":"http.handlers.file_server","msg":"sanitized path join","site_root":"/tmp/appsmith/www","fs":"","request_path":"/index.html","result":"/tmp/appsmith/www/index.html"}
+{"level":"debug","ts":1743836452.881526,"logger":"http.handlers.file_server","msg":"opening file","filename":"/tmp/appsmith/www/index.html"}
+READY
+RESULT 886
+processname:editor groupname:editor pid:1725 channel:stdout
+{"level":"info","ts":1743836452.8817365,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"::1","remote_port":"40782","client_ip":"::1","proto":"HTTP/1.1","method":"GET","host":"localhost","uri":"/","headers":{"User-Agent":["curl/7.68.0"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000569419,"size":5571,"status":200,"resp_headers":{"X-Appsmith-Request-Id":["c072fc40-b059-4d6c-aa2d-5f651f856f87"],"X-Request-Id":["invalid_request_id"],"Vary":["Accept-Encoding"],"Content-Type":["text/html; charset=utf-8"],"Content-Length":["5571"],"Etag":["\"d8yibkkuyo554ar\""],"Last-Modified":["Sat, 05 Apr 2025 06:55:42 GMT"],"Accept-Ranges":["bytes"],"Content-Security-Policy":["frame-ancestors 'self' *"],"X-Content-Type-Options":["nosniff"]},"uuid":"c072fc40-b059-4d6c-aa2d-5f651f856f87"}
+READY
+RESULT 137
+processname:postgres groupname:postgres pid:1733 channel:stderr
+2025-04-05 07:00:54.918 UTC [1733] LOG:  received smart shutdown request
+READY
+RESULT 189
+processname:postgres groupname:postgres pid:1733 channel:stderr
+2025-04-05 07:00:54.981 UTC [1733] LOG:  background worker "logical replication launcher" (PID 1792) exited with exit code 1
+READY
+RESULT 119
+processname:postgres groupname:postgres pid:1733 channel:stderr
+2025-04-05 07:00:54.990 UTC [1787] LOG:  shutting down
+READY
+RESULT 134
+processname:postgres groupname:postgres pid:1733 channel:stderr
+2025-04-05 07:00:55.329 UTC [1733] LOG:  database system is shut down
+READY
+RESULT 156
+processname:editor groupname:editor pid:1725 channel:stderr
+{"level":"info","ts":1743836455.338769,"msg":"quitting process immediately","signal":"SIGQUIT"}
+READY
+RESULT 231
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 07:00:55,371] [SpringApplicationShutdownHook] requestId= userEmail= traceId= spanId= - Commencing graceful shutdown. Waiting for active requests to complete
+READY
+RESULT 173
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 07:00:55,376] [netty-shutdown] requestId= userEmail= traceId= spanId= - Graceful shutdown complete
+READY
+RESULT 297
+processname:backend groupname:backend pid:1720 channel:stdout
+[2025-04-05 07:00:57,632] [SpringApplicationShutdownHook] requestId= userEmail= traceId= spanId= - Invocation of destroy method failed on bean with name 'container': org.springframework.data.redis.RedisSystemException: Redis exception
+READY
+RESULT 131
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:signal-handler (1743836462) Received SIGTERM scheduling shutdown...
+READY
+RESULT 199
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 07:01:03.033 # User requested shutdown...
+1717:M 05 Apr 2025 07:01:03.033 * Saving the final RDB snapshot before exiting.
+READY
+RESULT 182
+processname:redis groupname:redis pid:1717 channel:stdout
+1717:M 05 Apr 2025 07:01:03.054 * DB saved on disk
+1717:M 05 Apr 2025 07:01:03.054 # Redis is now ready to exit, bye bye...
+READY

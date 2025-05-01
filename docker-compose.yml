@@ -1,0 +1,78 @@
+version: "3.9"
+
+services:
+  mongodb:
+    image: mongo:6.0
+    container_name: takip_mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+      - ./app/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
+      MONGO_INITDB_DATABASE: ${MONGO_DB_NAME}
+    restart: unless-stopped
+    # Healthcheck opsiyonel olarak burada kalabilir
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongo localhost:27017/${MONGO_DB_NAME} --quiet
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - takip_network
+
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        - APP_ENV=development
+    container_name: takip_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+      - ./logs:/app/logs
+    env_file:
+      - .env.development
+    depends_on:
+      - mongodb
+    restart: unless-stopped
+    networks:
+      - takip_network
+
+  redis:
+    image: redis:7
+    container_name: takip_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - takip_network
+    restart: unless-stopped
+
+  appsmith:
+    image: appsmith/appsmith-ce
+    container_name: takip_appsmith
+    ports:
+      - "8080:80"
+    volumes:
+      - ./appsmith-stacks:/appsmith-stacks
+    environment:
+      - APPSMITH_MAIL_ENABLED=false
+    restart: unless-stopped
+    networks:
+      - takip_network
+
+volumes:
+  mongo_data:
+  redis_data:
+  appsmith-stacks:
+
+networks:
+  takip_network:
+    driver: bridge
+    name: takip_network

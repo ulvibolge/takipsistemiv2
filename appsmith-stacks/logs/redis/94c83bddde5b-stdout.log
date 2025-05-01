@@ -1,0 +1,28 @@
+1717:C 05 Apr 2025 06:55:42.543 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1717:C 05 Apr 2025 06:55:42.543 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1717, just started
+1717:C 05 Apr 2025 06:55:42.543 # Configuration loaded
+1717:M 05 Apr 2025 06:55:42.566 * Running mode=standalone, port=6379.
+1717:M 05 Apr 2025 06:55:42.566 # Server initialized
+1717:M 05 Apr 2025 06:55:42.567 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1717:M 05 Apr 2025 06:55:42.602 * DB loaded from disk: 0.031 seconds
+1717:M 05 Apr 2025 06:55:42.602 * Ready to accept connections
+1717:M 05 Apr 2025 06:57:57.867 * 1 changes in 15 seconds. Saving...
+1717:M 05 Apr 2025 06:57:57.868 * Background saving started by pid 2361
+2361:C 05 Apr 2025 06:57:57.909 * DB saved on disk
+2361:C 05 Apr 2025 06:57:57.910 * RDB: 0 MB of memory used by copy-on-write
+1717:M 05 Apr 2025 06:57:57.969 * Background saving terminated with success
+1717:M 05 Apr 2025 06:58:13.012 * 1 changes in 15 seconds. Saving...
+1717:M 05 Apr 2025 06:58:13.013 * Background saving started by pid 2372
+2372:C 05 Apr 2025 06:58:13.037 * DB saved on disk
+2372:C 05 Apr 2025 06:58:13.038 * RDB: 0 MB of memory used by copy-on-write
+1717:M 05 Apr 2025 06:58:13.113 * Background saving terminated with success
+1717:M 05 Apr 2025 06:59:47.833 * 1 changes in 15 seconds. Saving...
+1717:M 05 Apr 2025 06:59:47.834 * Background saving started by pid 2440
+2440:C 05 Apr 2025 06:59:48.013 * DB saved on disk
+2440:C 05 Apr 2025 06:59:48.014 * RDB: 0 MB of memory used by copy-on-write
+1717:M 05 Apr 2025 06:59:48.035 * Background saving terminated with success
+1717:signal-handler (1743836462) Received SIGTERM scheduling shutdown...
+1717:M 05 Apr 2025 07:01:03.033 # User requested shutdown...
+1717:M 05 Apr 2025 07:01:03.033 * Saving the final RDB snapshot before exiting.
+1717:M 05 Apr 2025 07:01:03.054 * DB saved on disk
+1717:M 05 Apr 2025 07:01:03.054 # Redis is now ready to exit, bye bye...

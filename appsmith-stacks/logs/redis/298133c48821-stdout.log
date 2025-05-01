@@ -1,0 +1,260 @@
+2097:C 02 Apr 2025 17:56:50.151 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+2097:C 02 Apr 2025 17:56:50.151 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=2097, just started
+2097:C 02 Apr 2025 17:56:50.151 # Configuration loaded
+2097:M 02 Apr 2025 17:56:50.158 * Running mode=standalone, port=6379.
+2097:M 02 Apr 2025 17:56:50.158 # Server initialized
+2097:M 02 Apr 2025 17:56:50.158 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+2097:M 02 Apr 2025 17:56:50.169 * Ready to accept connections
+2097:M 02 Apr 2025 17:59:48.404 * 1 changes in 15 seconds. Saving...
+2097:M 02 Apr 2025 17:59:48.405 * Background saving started by pid 2819
+2819:C 02 Apr 2025 17:59:48.442 * DB saved on disk
+2819:C 02 Apr 2025 17:59:48.444 * RDB: 0 MB of memory used by copy-on-write
+2097:M 02 Apr 2025 17:59:48.506 * Background saving terminated with success
+2097:M 02 Apr 2025 18:00:04.051 * 1 changes in 15 seconds. Saving...
+2097:M 02 Apr 2025 18:00:04.052 * Background saving started by pid 2840
+2840:C 02 Apr 2025 18:00:04.067 * DB saved on disk
+2840:C 02 Apr 2025 18:00:04.068 * RDB: 0 MB of memory used by copy-on-write
+2097:M 02 Apr 2025 18:00:04.152 * Background saving terminated with success
+2097:M 02 Apr 2025 18:01:44.119 * 1 changes in 15 seconds. Saving...
+2097:M 02 Apr 2025 18:01:44.120 * Background saving started by pid 2904
+2904:C 02 Apr 2025 18:01:44.181 * DB saved on disk
+2904:C 02 Apr 2025 18:01:44.182 * RDB: 0 MB of memory used by copy-on-write
+2097:M 02 Apr 2025 18:01:44.220 * Background saving terminated with success
+2097:M 02 Apr 2025 18:29:54.141 * 1 changes in 15 seconds. Saving...
+2097:M 02 Apr 2025 18:29:54.148 * Background saving started by pid 4037
+4037:C 02 Apr 2025 18:29:54.175 * DB saved on disk
+4037:C 02 Apr 2025 18:29:54.181 * RDB: 0 MB of memory used by copy-on-write
+2097:M 02 Apr 2025 18:29:54.249 * Background saving terminated with success
+2097:M 02 Apr 2025 20:15:45.801 * 1 changes in 15 seconds. Saving...
+2097:M 02 Apr 2025 20:15:45.807 * Background saving started by pid 5225
+5225:C 02 Apr 2025 20:15:45.835 * DB saved on disk
+5225:C 02 Apr 2025 20:15:45.838 * RDB: 0 MB of memory used by copy-on-write
+2097:M 02 Apr 2025 20:15:45.909 * Background saving terminated with success
+2097:M 02 Apr 2025 20:16:01.001 * 1 changes in 15 seconds. Saving...
+2097:M 02 Apr 2025 20:16:01.002 * Background saving started by pid 5238
+5238:C 02 Apr 2025 20:16:01.024 * DB saved on disk
+5238:C 02 Apr 2025 20:16:01.025 * RDB: 0 MB of memory used by copy-on-write
+2097:M 02 Apr 2025 20:16:01.102 * Background saving terminated with success
+2097:M 02 Apr 2025 20:45:45.633 * 1 changes in 15 seconds. Saving...
+2097:M 02 Apr 2025 20:45:45.638 * Background saving started by pid 6431
+6431:C 02 Apr 2025 20:45:45.657 * DB saved on disk
+6431:C 02 Apr 2025 20:45:45.659 * RDB: 0 MB of memory used by copy-on-write
+2097:M 02 Apr 2025 20:45:45.739 * Background saving terminated with success
+2097:M 03 Apr 2025 07:16:24.237 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 07:16:24.245 * Background saving started by pid 7618
+7618:C 03 Apr 2025 07:16:24.280 * DB saved on disk
+7618:C 03 Apr 2025 07:16:24.284 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 07:16:24.345 * Background saving terminated with success
+2097:M 03 Apr 2025 07:16:40.038 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 07:16:40.038 * Background saving started by pid 7631
+7631:C 03 Apr 2025 07:16:40.061 * DB saved on disk
+7631:C 03 Apr 2025 07:16:40.063 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 07:16:40.139 * Background saving terminated with success
+2097:M 03 Apr 2025 09:33:52.740 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 09:33:52.751 * Background saving started by pid 8815
+8815:C 03 Apr 2025 09:33:52.795 * DB saved on disk
+8815:C 03 Apr 2025 09:33:52.797 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 09:33:52.862 * Background saving terminated with success
+2097:M 03 Apr 2025 09:34:08.035 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 09:34:08.035 * Background saving started by pid 8830
+8830:C 03 Apr 2025 09:34:08.050 * DB saved on disk
+8830:C 03 Apr 2025 09:34:08.052 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 09:34:08.136 * Background saving terminated with success
+2097:M 03 Apr 2025 10:03:52.383 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 10:03:52.383 * Background saving started by pid 10022
+10022:C 03 Apr 2025 10:03:52.397 * DB saved on disk
+10022:C 03 Apr 2025 10:03:52.398 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 10:03:52.484 * Background saving terminated with success
+2097:M 03 Apr 2025 10:33:52.812 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 10:33:52.827 * Background saving started by pid 11219
+11219:C 03 Apr 2025 10:33:52.860 * DB saved on disk
+11219:C 03 Apr 2025 10:33:52.865 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 10:33:52.928 * Background saving terminated with success
+2097:M 03 Apr 2025 11:03:52.494 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 11:03:52.499 * Background saving started by pid 12428
+12428:C 03 Apr 2025 11:03:52.529 * DB saved on disk
+12428:C 03 Apr 2025 11:03:52.530 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 11:03:52.601 * Background saving terminated with success
+2097:M 03 Apr 2025 11:33:52.266 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 11:33:52.269 * Background saving started by pid 13632
+13632:C 03 Apr 2025 11:33:52.295 * DB saved on disk
+13632:C 03 Apr 2025 11:33:52.297 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 11:33:52.370 * Background saving terminated with success
+2097:M 03 Apr 2025 11:34:08.014 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 11:34:08.014 * Background saving started by pid 13645
+13645:C 03 Apr 2025 11:34:08.031 * DB saved on disk
+13645:C 03 Apr 2025 11:34:08.032 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 11:34:08.115 * Background saving terminated with success
+2097:M 03 Apr 2025 12:03:52.225 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 12:03:52.231 * Background saving started by pid 14840
+14840:C 03 Apr 2025 12:03:52.252 * DB saved on disk
+14840:C 03 Apr 2025 12:03:52.253 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 12:03:52.333 * Background saving terminated with success
+2097:M 03 Apr 2025 12:33:52.253 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 12:33:52.257 * Background saving started by pid 16043
+16043:C 03 Apr 2025 12:33:52.281 * DB saved on disk
+16043:C 03 Apr 2025 12:33:52.286 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 12:33:52.358 * Background saving terminated with success
+2097:M 03 Apr 2025 13:03:51.619 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 13:03:51.620 * Background saving started by pid 17254
+17254:C 03 Apr 2025 13:03:51.641 * DB saved on disk
+17254:C 03 Apr 2025 13:03:51.642 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 13:03:51.721 * Background saving terminated with success
+2097:M 03 Apr 2025 13:05:41.738 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 13:05:41.739 * Background saving started by pid 17329
+17329:C 03 Apr 2025 13:05:41.764 * DB saved on disk
+17329:C 03 Apr 2025 13:05:41.766 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 13:05:41.839 * Background saving terminated with success
+2097:M 03 Apr 2025 13:33:51.611 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 13:33:51.613 * Background saving started by pid 18466
+18466:C 03 Apr 2025 13:33:51.659 * DB saved on disk
+18466:C 03 Apr 2025 13:33:51.661 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 13:33:51.714 * Background saving terminated with success
+2097:M 03 Apr 2025 13:34:07.060 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 13:34:07.061 * Background saving started by pid 18478
+18478:C 03 Apr 2025 13:34:07.078 * DB saved on disk
+18478:C 03 Apr 2025 13:34:07.079 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 13:34:07.161 * Background saving terminated with success
+2097:M 03 Apr 2025 14:03:51.637 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 14:03:51.639 * Background saving started by pid 19668
+19668:C 03 Apr 2025 14:03:51.678 * DB saved on disk
+19668:C 03 Apr 2025 14:03:51.679 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 14:03:51.740 * Background saving terminated with success
+2097:M 03 Apr 2025 14:33:52.023 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 14:33:52.030 * Background saving started by pid 20866
+20866:C 03 Apr 2025 14:33:52.085 * DB saved on disk
+20866:C 03 Apr 2025 14:33:52.087 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 14:33:52.131 * Background saving terminated with success
+2097:M 03 Apr 2025 15:03:51.623 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 15:03:51.624 * Background saving started by pid 22066
+22066:C 03 Apr 2025 15:03:51.646 * DB saved on disk
+22066:C 03 Apr 2025 15:03:51.648 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 15:03:51.725 * Background saving terminated with success
+2097:M 03 Apr 2025 15:33:51.702 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 15:33:51.715 * Background saving started by pid 23274
+23274:C 03 Apr 2025 15:33:51.780 * DB saved on disk
+23274:C 03 Apr 2025 15:33:51.782 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 15:33:51.816 * Background saving terminated with success
+2097:M 03 Apr 2025 15:34:07.073 * 1 changes in 15 seconds. Saving...
+2097:M 03 Apr 2025 15:34:07.073 * Background saving started by pid 23286
+23286:C 03 Apr 2025 15:34:07.092 * DB saved on disk
+23286:C 03 Apr 2025 15:34:07.094 * RDB: 0 MB of memory used by copy-on-write
+2097:M 03 Apr 2025 15:34:07.174 * Background saving terminated with success
+2097:M 04 Apr 2025 05:52:27.345 * 1 changes in 15 seconds. Saving...
+2097:M 04 Apr 2025 05:52:28.048 * Background saving started by pid 24462
+24462:C 04 Apr 2025 05:52:28.557 * DB saved on disk
+24462:C 04 Apr 2025 05:52:28.583 * RDB: 0 MB of memory used by copy-on-write
+2097:M 04 Apr 2025 05:52:28.651 * Background saving terminated with success
+2097:M 04 Apr 2025 05:52:44.004 * 1 changes in 15 seconds. Saving...
+2097:M 04 Apr 2025 05:52:44.004 * Background saving started by pid 24474
+24474:C 04 Apr 2025 05:52:44.158 * DB saved on disk
+24474:C 04 Apr 2025 05:52:44.159 * RDB: 0 MB of memory used by copy-on-write
+2097:M 04 Apr 2025 05:52:44.217 * Background saving terminated with success
+1934:C 04 Apr 2025 06:15:31.115 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1934:C 04 Apr 2025 06:15:31.115 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1934, just started
+1934:C 04 Apr 2025 06:15:31.115 # Configuration loaded
+1934:M 04 Apr 2025 06:15:31.239 * Running mode=standalone, port=6379.
+1934:M 04 Apr 2025 06:15:31.239 # Server initialized
+1934:M 04 Apr 2025 06:15:31.240 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1934:M 04 Apr 2025 06:15:31.351 * DB loaded from disk: 0.111 seconds
+1934:M 04 Apr 2025 06:15:31.351 * Ready to accept connections
+1934:M 04 Apr 2025 06:18:58.574 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:18:58.575 * Background saving started by pid 2955
+2955:C 04 Apr 2025 06:18:58.741 * DB saved on disk
+2955:C 04 Apr 2025 06:18:58.742 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:18:58.776 * Background saving terminated with success
+1934:M 04 Apr 2025 06:20:07.320 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:20:07.321 * Background saving started by pid 3005
+3005:C 04 Apr 2025 06:20:07.853 * DB saved on disk
+3005:C 04 Apr 2025 06:20:07.855 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:20:07.927 * Background saving terminated with success
+1934:M 04 Apr 2025 06:20:23.003 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:20:23.003 * Background saving started by pid 3017
+3017:C 04 Apr 2025 06:20:23.254 * DB saved on disk
+3017:C 04 Apr 2025 06:20:23.256 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:20:23.304 * Background saving terminated with success
+1934:M 04 Apr 2025 06:20:46.183 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:20:46.184 * Background saving started by pid 3032
+3032:C 04 Apr 2025 06:20:47.906 * DB saved on disk
+3032:C 04 Apr 2025 06:20:47.907 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:20:47.970 * Background saving terminated with success
+1934:M 04 Apr 2025 06:21:03.118 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:21:03.119 * Background saving started by pid 3059
+3059:C 04 Apr 2025 06:21:04.216 * DB saved on disk
+3059:C 04 Apr 2025 06:21:04.218 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:21:04.277 * Background saving terminated with success
+1934:M 04 Apr 2025 06:21:20.013 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:21:20.013 * Background saving started by pid 3075
+3075:C 04 Apr 2025 06:21:20.545 * DB saved on disk
+3075:C 04 Apr 2025 06:21:20.561 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:21:20.622 * Background saving terminated with success
+1934:M 04 Apr 2025 06:21:36.094 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:21:36.094 * Background saving started by pid 3101
+3101:C 04 Apr 2025 06:21:36.156 * DB saved on disk
+3101:C 04 Apr 2025 06:21:36.157 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:21:36.195 * Background saving terminated with success
+1934:M 04 Apr 2025 06:24:40.460 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:24:40.460 * Background saving started by pid 3215
+3215:C 04 Apr 2025 06:24:41.042 * DB saved on disk
+3215:C 04 Apr 2025 06:24:41.044 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:24:41.071 * Background saving terminated with success
+1934:M 04 Apr 2025 06:24:57.059 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:24:57.059 * Background saving started by pid 3234
+3234:C 04 Apr 2025 06:24:57.159 * DB saved on disk
+3234:C 04 Apr 2025 06:24:57.160 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:24:57.260 * Background saving terminated with success
+1934:M 04 Apr 2025 06:26:26.566 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:26:26.566 * Background saving started by pid 3291
+3291:C 04 Apr 2025 06:26:26.820 * DB saved on disk
+3291:C 04 Apr 2025 06:26:26.821 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:26:26.871 * Background saving terminated with success
+1934:M 04 Apr 2025 06:26:42.029 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:26:42.029 * Background saving started by pid 3310
+3310:C 04 Apr 2025 06:26:42.366 * DB saved on disk
+3310:C 04 Apr 2025 06:26:42.367 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:26:42.431 * Background saving terminated with success
+1934:M 04 Apr 2025 06:26:58.015 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:26:59.066 * Background saving started by pid 3322
+3322:C 04 Apr 2025 06:26:59.380 * DB saved on disk
+3322:C 04 Apr 2025 06:26:59.381 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:26:59.466 * Background saving terminated with success
+1934:M 04 Apr 2025 06:27:15.079 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:27:15.079 * Background saving started by pid 3334
+3334:C 04 Apr 2025 06:27:15.538 * DB saved on disk
+3334:C 04 Apr 2025 06:27:15.539 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:27:15.581 * Background saving terminated with success
+1934:M 04 Apr 2025 06:27:31.034 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:27:31.035 * Background saving started by pid 3345
+3345:C 04 Apr 2025 06:27:31.063 * DB saved on disk
+3345:C 04 Apr 2025 06:27:31.065 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:27:31.135 * Background saving terminated with success
+1934:M 04 Apr 2025 06:27:47.020 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:27:47.021 * Background saving started by pid 3357
+3357:C 04 Apr 2025 06:27:47.046 * DB saved on disk
+3357:C 04 Apr 2025 06:27:47.047 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:27:47.121 * Background saving terminated with success
+1934:M 04 Apr 2025 06:28:03.011 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:28:03.011 * Background saving started by pid 3368
+3368:C 04 Apr 2025 06:28:03.042 * DB saved on disk
+3368:C 04 Apr 2025 06:28:03.043 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:28:03.112 * Background saving terminated with success
+1934:M 04 Apr 2025 06:28:19.077 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:28:19.078 * Background saving started by pid 3380
+3380:C 04 Apr 2025 06:28:19.097 * DB saved on disk
+3380:C 04 Apr 2025 06:28:19.098 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:28:19.178 * Background saving terminated with success
+1934:M 04 Apr 2025 06:28:35.004 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:28:35.005 * Background saving started by pid 3390
+3390:C 04 Apr 2025 06:28:35.218 * DB saved on disk
+3390:C 04 Apr 2025 06:28:35.225 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:28:35.323 * Background saving terminated with success
+1934:M 04 Apr 2025 06:28:51.016 * 1 changes in 15 seconds. Saving...
+1934:M 04 Apr 2025 06:28:51.017 * Background saving started by pid 3404
+3404:C 04 Apr 2025 06:28:51.036 * DB saved on disk
+3404:C 04 Apr 2025 06:28:51.038 * RDB: 0 MB of memory used by copy-on-write
+1934:M 04 Apr 2025 06:28:51.117 * Background saving terminated with success
+1934:signal-handler (1743748744) Received SIGTERM scheduling shutdown...
+1934:M 04 Apr 2025 06:39:04.738 # User requested shutdown...
+1934:M 04 Apr 2025 06:39:04.738 * Saving the final RDB snapshot before exiting.
+1934:M 04 Apr 2025 06:39:04.776 * DB saved on disk
+1934:M 04 Apr 2025 06:39:04.776 # Redis is now ready to exit, bye bye...

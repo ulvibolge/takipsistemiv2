@@ -1,0 +1,1 @@
+{"t":{"$date":"2025-04-04T11:15:44.506Z"},"s":"I",  "c":"CONTROL",  "id":20697,   "ctx":"-","msg":"Renamed existing log file","attr":{"oldLogPath":"/appsmith-stacks/logs/mongodb/db.log","newLogPath":"/appsmith-stacks/logs/mongodb/db.log.2025-04-04T11-15-44"}}

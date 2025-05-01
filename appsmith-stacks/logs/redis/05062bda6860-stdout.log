@@ -1,0 +1,18 @@
+1700:C 05 Apr 2025 08:59:03.132 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1700:C 05 Apr 2025 08:59:03.132 # Redis version=5.0.7, bits=64, commit=00000000, modified=0, pid=1700, just started
+1700:C 05 Apr 2025 08:59:03.132 # Configuration loaded
+1700:M 05 Apr 2025 08:59:03.141 * Running mode=standalone, port=6379.
+1700:M 05 Apr 2025 08:59:03.141 # Server initialized
+1700:M 05 Apr 2025 08:59:03.141 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1700:M 05 Apr 2025 08:59:03.168 * DB loaded from disk: 0.026 seconds
+1700:M 05 Apr 2025 08:59:03.168 * Ready to accept connections
+1700:M 05 Apr 2025 09:01:09.725 * 1 changes in 15 seconds. Saving...
+1700:M 05 Apr 2025 09:01:09.725 * Background saving started by pid 2254
+2254:C 05 Apr 2025 09:01:09.799 * DB saved on disk
+2254:C 05 Apr 2025 09:01:09.800 * RDB: 0 MB of memory used by copy-on-write
+1700:M 05 Apr 2025 09:01:09.826 * Background saving terminated with success
+1700:M 05 Apr 2025 09:01:25.091 * 1 changes in 15 seconds. Saving...
+1700:M 05 Apr 2025 09:01:25.092 * Background saving started by pid 2264
+2264:C 05 Apr 2025 09:01:25.318 * DB saved on disk
+2264:C 05 Apr 2025 09:01:25.319 * RDB: 0 MB of memory used by copy-on-write
+1700:M 05 Apr 2025 09:01:25.393 * Background saving terminated with success

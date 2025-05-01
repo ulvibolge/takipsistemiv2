@@ -1,0 +1,32 @@
+# Çekirdek
+fastapi==0.103.1
+uvicorn==0.23.2
+pymongo==4.5.0
+python-dotenv==1.0.0
+
+# Güvenlik
+passlib[bcrypt]==1.7.4
+python-jose==3.3.0
+pyotp==2.9.0
+email-validator==2.0.0
+
+# Veri İşleme
+python-multipart==0.0.6
+python-dateutil==2.8.2
+
+# MongoDB Gelişmiş
+motor==3.3.2
+dnspython==2.4.2
+
+# Performans
+uvloop==0.18.0; sys_platform != 'win32'
+httptools==0.6.0
+
+# Geliştirme Araçları
+pytest==7.4.0
+pytest-asyncio==0.23.5
+loguru==0.7.2
+
+# Pydantic ve Ayarlar
+pydantic[email]==2.4.2
+pydantic-settings==2.0.3
